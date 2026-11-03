@@ -1,0 +1,4624 @@
+{
+ "model": "Qwen/Qwen-Image-Edit",
+ "weights": "Qwen_Image_Edit-Q4_K_M.gguf",
+ "steps": 30,
+ "true_cfg_scale": 4.0,
+ "prompt_seed": 20260920,
+ "profile": {
+  "kind": "rented",
+  "name": "NVIDIA GeForce RTX 4090",
+  "vram_gb": 23.5164794921875,
+  "bf16": true,
+  "drives_display": false,
+  "memory_fraction": null,
+  "gpus": 1,
+  "sm": [
+   8,
+   9
+  ],
+  "dtype": "bfloat16"
+ },
+ "resident": true,
+ "variants": [
+  {
+   "id": "face_000_surprised",
+   "base_id": "face_000",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_000.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 410431152,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_000_surprised.png",
+   "sha256": "7833d13ace761c88ba6fff20a454b2ece9188d970bf421534dc7c9e6acb1ee81",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    255
+   ]
+  },
+  {
+   "id": "face_001_threeq_l",
+   "base_id": "face_001",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_001.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2054196331,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_001_threeq_l.png",
+   "sha256": "1fd4f65bd741cd98fc62f8b02f03b6d30d50beaac51daa59e31b45a58b8e6ce9",
+   "seconds": 105.1,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    251
+   ]
+  },
+  {
+   "id": "face_002_surprised",
+   "base_id": "face_002",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_002.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1374991469,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_002_surprised.png",
+   "sha256": "dc1a8101c32718fad9a458db559d61316e15d69bd733a6a803ab836b2ca1c9a6",
+   "seconds": 105.3,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    244
+   ]
+  },
+  {
+   "id": "face_003_chin_up",
+   "base_id": "face_003",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_003.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 661999668,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_003_chin_up.png",
+   "sha256": "94a08712a69368f0eca3b55a77bf2ddbe91579b50c8f8fd6874549d407c540ed",
+   "seconds": 105.2,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    239
+   ]
+  },
+  {
+   "id": "face_004_disappointed",
+   "base_id": "face_004",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_004.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 65263203,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_004_disappointed.png",
+   "sha256": "888a6fb9fecf6d6fedbf428eead1007d3aadfa9e86b8fd2002706f098d29f3fd",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    5,
+    229
+   ]
+  },
+  {
+   "id": "face_005_threeq_r",
+   "base_id": "face_005",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_005.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 212627357,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_005_threeq_r.png",
+   "sha256": "afebab9e6814311ae8f64540a087fedc6595ce34e0b9a77bbf127a51a66b4780",
+   "seconds": 105.1,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    247
+   ]
+  },
+  {
+   "id": "face_006_angry",
+   "base_id": "face_006",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_006.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1505708012,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_006_angry.png",
+   "sha256": "426e2d3d95c103d4427dea987b9c1c68757ad5b845d8f7b8f82821aca466a361",
+   "seconds": 105.2,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    240
+   ]
+  },
+  {
+   "id": "face_007_chin_up",
+   "base_id": "face_007",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_007.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 549345959,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_007_chin_up.png",
+   "sha256": "9a6d3298f8298b6dd52fa5f18192c404a26eb07a0b14acf0f005f838654604d2",
+   "seconds": 105.4,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    227
+   ]
+  },
+  {
+   "id": "face_008_surprised",
+   "base_id": "face_008",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_008.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2002236757,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_008_surprised.png",
+   "sha256": "e31399ca449cc676c40641df9d412afb25f184be466ccc43b29635109ec61647",
+   "seconds": 105.1,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    254
+   ]
+  },
+  {
+   "id": "face_009_threeq_r",
+   "base_id": "face_009",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_009.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 510466157,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_009_threeq_r.png",
+   "sha256": "eaff5dc6693fddfe4ed4f02b1d010e156463bd39a2af25cc25ca01db62f5340c",
+   "seconds": 105.2,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    240
+   ]
+  },
+  {
+   "id": "face_010_tired",
+   "base_id": "face_010",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_010.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1454011801,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_010_tired.png",
+   "sha256": "7068fde7cac153943f10403b8e5b984f8e7d214a473f45b61efe03ef2f4cc200",
+   "seconds": 105.3,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    241
+   ]
+  },
+  {
+   "id": "face_011_chin_down",
+   "base_id": "face_011",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_011.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 232788514,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_011_chin_down.png",
+   "sha256": "7866fecfcbedfe43574d0b671fc89483009c5b1ce709a37deb4ed67cd43a013b",
+   "seconds": 105.2,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    244
+   ]
+  },
+  {
+   "id": "face_012_smiling",
+   "base_id": "face_012",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_012.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 690469371,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_012_smiling.png",
+   "sha256": "df9bffa0ae58d02aa28652b3af7e98f4e9cd64ddf1677bc2ac3519e63fc3cf45",
+   "seconds": 105.4,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    246
+   ]
+  },
+  {
+   "id": "face_013_chin_up",
+   "base_id": "face_013",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_013.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 973132856,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_013_chin_up.png",
+   "sha256": "06f1d5427a83b9926c9283a9e23f877008b66b4b8066553d3aa8dbe07097e504",
+   "seconds": 105.3,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    8,
+    232
+   ]
+  },
+  {
+   "id": "face_014_surprised",
+   "base_id": "face_014",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_014.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1617057416,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_014_surprised.png",
+   "sha256": "92197b6a6711db6cbf43a09972a7aa46c5d7f20baf529dbe441d7c8974295cdf",
+   "seconds": 105.4,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    244
+   ]
+  },
+  {
+   "id": "face_015_chin_down",
+   "base_id": "face_015",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_015.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 351565802,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_015_chin_down.png",
+   "sha256": "2af3c46fd97f924f08ce28fa490c708d84c28a3d907703cb5ce941dd0aa71a65",
+   "seconds": 105.3,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    231
+   ]
+  },
+  {
+   "id": "face_016_surprised",
+   "base_id": "face_016",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_016.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 705702548,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_016_surprised.png",
+   "sha256": "b17f0de84070bb61bb121cc4d9e14687a8d60eb91b32c3ddbdb308b4fc6fbd49",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    254
+   ]
+  },
+  {
+   "id": "face_017_threeq_l",
+   "base_id": "face_017",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_017.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1350900050,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_017_threeq_l.png",
+   "sha256": "f03ea78ada69416837f1cff152bdc1435f0cf2d008036e9122552c3ab71050c0",
+   "seconds": 105.1,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    235
+   ]
+  },
+  {
+   "id": "face_018_tired",
+   "base_id": "face_018",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_018.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1245885111,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_018_tired.png",
+   "sha256": "a6b7e7e758554c5f871d2c621d40c0e075f60be8fe2578b7afd36491d0e303aa",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    246
+   ]
+  },
+  {
+   "id": "face_019_chin_down",
+   "base_id": "face_019",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_019.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1679425996,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_019_chin_down.png",
+   "sha256": "85512c9724e2bde5758e6a9a06e9c8caa95a11b1ab8aa64d08efad76dd13f39c",
+   "seconds": 105.1,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    232
+   ]
+  },
+  {
+   "id": "face_020_smiling",
+   "base_id": "face_020",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_020.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1351260290,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_020_smiling.png",
+   "sha256": "d4bcec56be84f1cc3dd7925849f0de80994ad17b0efd0f0576f37063d0ad10a4",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    246
+   ]
+  },
+  {
+   "id": "face_021_threeq_l",
+   "base_id": "face_021",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_021.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1138084694,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_021_threeq_l.png",
+   "sha256": "f582753fffc49d16c7759116e130e0baf38b2200dac2a5bc3803b08231a33c46",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    238
+   ]
+  },
+  {
+   "id": "face_022_disappointed",
+   "base_id": "face_022",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_022.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1435588887,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_022_disappointed.png",
+   "sha256": "c13ba4755e8837113becb64b3b9abe79ecf38f4d3d9200431ec55d5e4a6bc1a4",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    241
+   ]
+  },
+  {
+   "id": "face_023_threeq_r",
+   "base_id": "face_023",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_023.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1126466417,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_023_threeq_r.png",
+   "sha256": "cd6e0054541d602d94905ce089774c80dadf390c0e472aaff0ed20d8cdba5776",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    253
+   ]
+  },
+  {
+   "id": "face_024_smiling",
+   "base_id": "face_024",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_024.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 437742574,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_024_smiling.png",
+   "sha256": "5754716fd38b3640a58fce1a20e52eb2fdafe277b60c7884d468c3cb0b5a4d3d",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    246
+   ]
+  },
+  {
+   "id": "face_025_chin_down",
+   "base_id": "face_025",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_025.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1786067437,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_025_chin_down.png",
+   "sha256": "a305287274067a8727d85f247306cb1e088b7d203e45044b9e8309162114825d",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    7,
+    217
+   ]
+  },
+  {
+   "id": "face_026_angry",
+   "base_id": "face_026",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_026.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1192996959,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_026_angry.png",
+   "sha256": "da3fc3d28bbc3a7e4f16e445f5694d2d7b4bffe0d7f34af7852cee44a788e6c1",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    245
+   ]
+  },
+  {
+   "id": "face_027_threeq_r",
+   "base_id": "face_027",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_027.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1098701791,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_027_threeq_r.png",
+   "sha256": "1ed354af596e0218dbf551951dfcf45076a5f778188a69294c44cd2c614e107c",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    250
+   ]
+  },
+  {
+   "id": "face_028_disappointed",
+   "base_id": "face_028",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_028.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1386505761,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_028_disappointed.png",
+   "sha256": "8ed08307b41f4ce0e28e006ee94e3cd330896b4da1b2e39057f9d6a429516b41",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    243
+   ]
+  },
+  {
+   "id": "face_029_threeq_r",
+   "base_id": "face_029",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_029.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1553847689,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_029_threeq_r.png",
+   "sha256": "7aaae021fdbf18336cd1c326e86b6d81319fb016d0e01feba8a4a3dc9b18fdfb",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    255
+   ]
+  },
+  {
+   "id": "face_030_angry",
+   "base_id": "face_030",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_030.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 436548499,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_030_angry.png",
+   "sha256": "2806ccd29ee8452196fbd03a00b5c8505a2625a878b1fe19794c3c98304aaff5",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    249
+   ]
+  },
+  {
+   "id": "face_031_threeq_r",
+   "base_id": "face_031",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_031.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 171874461,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_031_threeq_r.png",
+   "sha256": "3a4c4c76c8391f7b91e05d2915136a225c0179a81a855448051c07d1ab8360be",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    249
+   ]
+  },
+  {
+   "id": "face_032_surprised",
+   "base_id": "face_032",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_032.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2133218871,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_032_surprised.png",
+   "sha256": "0f816ea6511a63ca52220c0a504bda00c6f6d89e8e32f092b4cdd948dcc29e35",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    242
+   ]
+  },
+  {
+   "id": "face_033_threeq_l",
+   "base_id": "face_033",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_033.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1998114922,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_033_threeq_l.png",
+   "sha256": "1ef7960632f51d251f5d8f48ba0323b2f3f1e182505b3029a033b9f1ccb0d805",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    239
+   ]
+  },
+  {
+   "id": "face_034_angry",
+   "base_id": "face_034",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_034.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1320506679,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_034_angry.png",
+   "sha256": "b638d1f83cf1378390324bba659a26ae596de4d33a476b4505c3eae1e3338d18",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    252
+   ]
+  },
+  {
+   "id": "face_035_chin_down",
+   "base_id": "face_035",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_035.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1180653326,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_035_chin_down.png",
+   "sha256": "031c4c9fdfbb9b484cca01631e59b5b06a2ba749f170b275467d2a4351ea0a4b",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    243
+   ]
+  },
+  {
+   "id": "face_036_tired",
+   "base_id": "face_036",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_036.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 726154909,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_036_tired.png",
+   "sha256": "11cd0f733e6e3067dee80d20f667ca9a32f8ac0c2e20741d4393974c9d9b854b",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    234
+   ]
+  },
+  {
+   "id": "face_037_threeq_l",
+   "base_id": "face_037",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_037.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1561569095,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_037_threeq_l.png",
+   "sha256": "d968e2e0b24ddae1c7a5044030b9b966062d92784a6f40470500929b7feb4998",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    246
+   ]
+  },
+  {
+   "id": "face_038_smiling",
+   "base_id": "face_038",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_038.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1735030551,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_038_smiling.png",
+   "sha256": "6f8bc09ed3f7c4a639c4582d9a585894ea06c5035d6adc84ea79807a14b29360",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    240
+   ]
+  },
+  {
+   "id": "face_039_threeq_l",
+   "base_id": "face_039",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_039.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1169485214,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_039_threeq_l.png",
+   "sha256": "1b39eef754b849885b95772ab52c79d3e4550ee8d010309bbbdec6f215c0feb0",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    251
+   ]
+  },
+  {
+   "id": "face_040_disappointed",
+   "base_id": "face_040",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_040.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 348029181,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_040_disappointed.png",
+   "sha256": "0ef5e1236b9b93eb54fac14a41c23f7c63de21f2bfc89412dffb98757e48c93a",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    5,
+    241
+   ]
+  },
+  {
+   "id": "face_041_threeq_l",
+   "base_id": "face_041",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_041.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1448538640,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_041_threeq_l.png",
+   "sha256": "fbf600e03cfdea90bc8f17a982107e760739164bbf838b105c58830280fe45af",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    233
+   ]
+  },
+  {
+   "id": "face_042_disappointed",
+   "base_id": "face_042",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_042.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 531538518,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_042_disappointed.png",
+   "sha256": "404b9a9206548416b9e9d0e6158825951208841f2eff69d144edcda2c8108148",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    233
+   ]
+  },
+  {
+   "id": "face_043_chin_down",
+   "base_id": "face_043",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_043.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1103504157,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_043_chin_down.png",
+   "sha256": "222aeb863ba3fb8b3e4f8c61f8fec69bb3cfdd4875d16f325be52ff02a8bbe8b",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    229
+   ]
+  },
+  {
+   "id": "face_044_disappointed",
+   "base_id": "face_044",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_044.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1506705660,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_044_disappointed.png",
+   "sha256": "2719c0990696197a0ab527b9fe85fc28c63aa85b5519b7cf8dbe4927cfe8ae54",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    221
+   ]
+  },
+  {
+   "id": "face_045_chin_down",
+   "base_id": "face_045",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_045.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 74052509,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_045_chin_down.png",
+   "sha256": "350665cc24cabdb81b5b6c5c6ac189a8bc010a95a1df213f4f27ca2b5666dbcd",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    247
+   ]
+  },
+  {
+   "id": "face_046_surprised",
+   "base_id": "face_046",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_046.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 480421172,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_046_surprised.png",
+   "sha256": "8fb9b7dfd1e1dfd8388e4d082a83d6b964003dc60b0273abecd7d3e2df43e2df",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    6,
+    246
+   ]
+  },
+  {
+   "id": "face_047_threeq_l",
+   "base_id": "face_047",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_047.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1186188210,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_047_threeq_l.png",
+   "sha256": "90f6f4ccee1e8104857745817c0886646eef6891f009525d58cc55c7bd7044da",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    252
+   ]
+  },
+  {
+   "id": "face_048_smiling",
+   "base_id": "face_048",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_048.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 984894947,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_048_smiling.png",
+   "sha256": "03069ef1b26383b3cab8ba5b43e4de4b20782afe30a07c9b9ffabcaa7967249a",
+   "seconds": 105.1,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    250
+   ]
+  },
+  {
+   "id": "face_049_chin_up",
+   "base_id": "face_049",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_049.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 204695348,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_049_chin_up.png",
+   "sha256": "23b3f2b88278a4c4864ae7c74d9815442f9d560af682f326e7a5c6d93a9ae2c7",
+   "seconds": 105.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    248
+   ]
+  },
+  {
+   "id": "face_050_disappointed",
+   "base_id": "face_050",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_050.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 825399850,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_050_disappointed.png",
+   "sha256": "a38bf6e26424e54310b016bafa9940e6e453dda5a4d1ce730ce4972dee5b2f98",
+   "seconds": 105.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    242
+   ]
+  },
+  {
+   "id": "face_051_chin_down",
+   "base_id": "face_051",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_051.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1931999405,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_051_chin_down.png",
+   "sha256": "34d6ae9da7b16d5ee6a5ad72508a22c05ffd47619fc2f9e8c73a7be48df19de0",
+   "seconds": 105.3,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    240
+   ]
+  },
+  {
+   "id": "face_052_disappointed",
+   "base_id": "face_052",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_052.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 706541887,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_052_disappointed.png",
+   "sha256": "f5803d3154becaecd9f626483436efdb128a25cc716ed97247f8666a22a02998",
+   "seconds": 105.3,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    243
+   ]
+  },
+  {
+   "id": "face_053_chin_down",
+   "base_id": "face_053",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_053.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1141161462,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_053_chin_down.png",
+   "sha256": "ca9ddb25314f0ede95858bed71a15510f740654633f396e8b313e1de07dfe407",
+   "seconds": 105.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    240
+   ]
+  },
+  {
+   "id": "face_054_angry",
+   "base_id": "face_054",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_054.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1834035607,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_054_angry.png",
+   "sha256": "d777e00d1c21fab13a5bf5fad12d2916dd228c7733b9ee377ef51cca448598a7",
+   "seconds": 105.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    247
+   ]
+  },
+  {
+   "id": "face_055_chin_down",
+   "base_id": "face_055",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_055.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 455979828,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_055_chin_down.png",
+   "sha256": "fc7890d34b4708a462485927298490978d4d85c0182ee2b6a1e711b1dd26ac36",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    246
+   ]
+  },
+  {
+   "id": "face_056_surprised",
+   "base_id": "face_056",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_056.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 877029924,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_056_surprised.png",
+   "sha256": "8ea4534372c66a001a30769bb18e645dd4f0f49dc164a59c722e616ce628c70b",
+   "seconds": 104.4,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    238
+   ]
+  },
+  {
+   "id": "face_057_chin_up",
+   "base_id": "face_057",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_057.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1372838666,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_057_chin_up.png",
+   "sha256": "dec38d8c2d78592a9095a06dd97f7f8a02b79edfd30c8c9ba1e40bb11e467532",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    243
+   ]
+  },
+  {
+   "id": "face_058_surprised",
+   "base_id": "face_058",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_058.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 48755050,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_058_surprised.png",
+   "sha256": "2b331535b7d5c27617dfa75916065d6390d7431f4f4bd82a51949691221fe4ad",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    229
+   ]
+  },
+  {
+   "id": "face_059_chin_up",
+   "base_id": "face_059",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_059.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1549223869,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_059_chin_up.png",
+   "sha256": "ecc2474198fe9ec2f28edec26ec83540c52c378f6f77b9503c94c4a9d4d0c4b4",
+   "seconds": 105.1,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    233
+   ]
+  },
+  {
+   "id": "face_060_angry",
+   "base_id": "face_060",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_060.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2038207923,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_060_angry.png",
+   "sha256": "5ed9ad173d34dd5e66b39f84488d0a495fb2804a39c9c3c719aac0e7e58fceee",
+   "seconds": 105.1,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    244
+   ]
+  },
+  {
+   "id": "face_061_threeq_l",
+   "base_id": "face_061",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_061.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1803360003,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_061_threeq_l.png",
+   "sha256": "0bcf1a1193750f3e869cb440ebbb32bb3cef7ba5fd4f9c2ff3df96f5b0c8b9f4",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    228
+   ]
+  },
+  {
+   "id": "face_062_disappointed",
+   "base_id": "face_062",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_062.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 700951971,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_062_disappointed.png",
+   "sha256": "5f18c43750496e7f7cc588801dd4541a202703a5fca157d284f11100c4303ef3",
+   "seconds": 105.1,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    244
+   ]
+  },
+  {
+   "id": "face_063_threeq_r",
+   "base_id": "face_063",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_063.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1363444277,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_063_threeq_r.png",
+   "sha256": "b63b9c7513b5c77dffae33ee3bed2df881b5ecd60f77bbd0a3a57d1638a468d6",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    229
+   ]
+  },
+  {
+   "id": "face_064_tired",
+   "base_id": "face_064",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_064.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 919469443,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_064_tired.png",
+   "sha256": "282189240efec29f5799111f9e6e9766681dd7bd5057531a8580533622ad9d89",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    229
+   ]
+  },
+  {
+   "id": "face_065_chin_down",
+   "base_id": "face_065",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_065.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2061383212,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_065_chin_down.png",
+   "sha256": "3fac3ac7489f3cbb353db26efadb6b2e8dbc797e0a61eb7dd1bd63fbf2f960a4",
+   "seconds": 105.4,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    223
+   ]
+  },
+  {
+   "id": "face_066_smiling",
+   "base_id": "face_066",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_066.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 247853602,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_066_smiling.png",
+   "sha256": "4f835304ef3959d2d29fc539aadf3925be480f04cd89ef90ea42fdd35b3c5140",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    254
+   ]
+  },
+  {
+   "id": "face_067_chin_up",
+   "base_id": "face_067",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_067.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1475189249,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_067_chin_up.png",
+   "sha256": "d90cc6ee8b86f3e1b4e784bfd87c591cebfb7d10e9645f2c0ead69d677bb1035",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    5,
+    232
+   ]
+  },
+  {
+   "id": "face_068_smiling",
+   "base_id": "face_068",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_068.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 894738824,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_068_smiling.png",
+   "sha256": "a2fc7b3eb221fb0dfdcbe66c7c7e46e8415ca3b9781aa43baa82e96457527c31",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    245
+   ]
+  },
+  {
+   "id": "face_069_threeq_r",
+   "base_id": "face_069",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_069.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 797842122,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_069_threeq_r.png",
+   "sha256": "63abd9cd7eeab7eeacb848fc55f362c53d8f075052d547a8275118a0ec7b10c7",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    241
+   ]
+  },
+  {
+   "id": "face_070_surprised",
+   "base_id": "face_070",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_070.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1497445606,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_070_surprised.png",
+   "sha256": "fd6573870cec837444d783a6e0298e7a7abcde518d2c46cd642151f1ba2cd43d",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    249
+   ]
+  },
+  {
+   "id": "face_071_chin_down",
+   "base_id": "face_071",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_071.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1307518984,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_071_chin_down.png",
+   "sha256": "7cad8dc4015a811bb03a592fd6bca1345e0bb28981c9adfb12d759ebad0f6e46",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    244
+   ]
+  },
+  {
+   "id": "face_072_smiling",
+   "base_id": "face_072",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_072.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 868445658,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_072_smiling.png",
+   "sha256": "adb795ae3f2b49fb8d69aaa118134b31599fdacd7c17ff23e4bc46c304c64a58",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    250
+   ]
+  },
+  {
+   "id": "face_073_threeq_r",
+   "base_id": "face_073",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_073.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1982560807,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_073_threeq_r.png",
+   "sha256": "8e529767916d477032f9a53017bee972a60546ba88030c0e78f23e11ce19b4f2",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    243
+   ]
+  },
+  {
+   "id": "face_074_smiling",
+   "base_id": "face_074",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_074.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 972390897,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_074_smiling.png",
+   "sha256": "1e945268fdd18eadd316a856dc1dd0573e4992ebaa79d46d357a3b54ff97b938",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    250
+   ]
+  },
+  {
+   "id": "face_075_threeq_r",
+   "base_id": "face_075",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_075.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 999012870,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_075_threeq_r.png",
+   "sha256": "7ea5889fbad8d328b25c823988fc21484e94463d9fca4de51752f18cae455900",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    242
+   ]
+  },
+  {
+   "id": "face_076_tired",
+   "base_id": "face_076",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_076.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 574677566,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_076_tired.png",
+   "sha256": "e28f321514e4802088013dd40e3cc944808fbcdb315ed67a0920bb06415dded9",
+   "seconds": 104.4,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    239
+   ]
+  },
+  {
+   "id": "face_077_chin_down",
+   "base_id": "face_077",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_077.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 881337907,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_077_chin_down.png",
+   "sha256": "2455c860fbc14553d46276a0703819f9dda026d8de53c9f9fb5766d812c3c89c",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    251
+   ]
+  },
+  {
+   "id": "face_078_angry",
+   "base_id": "face_078",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_078.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1238348886,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_078_angry.png",
+   "sha256": "5337f0eb8222bc52cec677b72fc89a454b3dce521de5be6e33fc8c12d4b24581",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    238
+   ]
+  },
+  {
+   "id": "face_079_chin_down",
+   "base_id": "face_079",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_079.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2080077262,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_079_chin_down.png",
+   "sha256": "68f300c5ef2f562efa9755f762ed92473d7710e77e3af8c992fea6bd1c7c86b4",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    8,
+    246
+   ]
+  },
+  {
+   "id": "face_080_tired",
+   "base_id": "face_080",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_080.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1431688048,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_080_tired.png",
+   "sha256": "01b68d06ab3b5a285a86a15c3e3fcea081697506493835c7c9e039a1da5aadbd",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    7,
+    218
+   ]
+  },
+  {
+   "id": "face_081_chin_down",
+   "base_id": "face_081",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_081.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1421671449,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_081_chin_down.png",
+   "sha256": "36a1c3a0c04f4747b75de63dd5677541b1edeb522317b5c822e45c575f1dbf66",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    252
+   ]
+  },
+  {
+   "id": "face_082_tired",
+   "base_id": "face_082",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_082.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 773945639,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_082_tired.png",
+   "sha256": "3aa61dffa2d19cf5306c8f1490d9b2dce0122288e38fc5de40e034b01d779710",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    248
+   ]
+  },
+  {
+   "id": "face_083_threeq_l",
+   "base_id": "face_083",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_083.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 114258969,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_083_threeq_l.png",
+   "sha256": "103f53bea7e2d3db4cbd6ac941680c7ebf62ed336f33aae29323779bc00d6f4f",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    8,
+    239
+   ]
+  },
+  {
+   "id": "face_084_smiling",
+   "base_id": "face_084",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_084.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 844555210,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_084_smiling.png",
+   "sha256": "48f475bc806cfa01749702438ae0d58501f7081f3e2ecd91de337fad897b1773",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    243
+   ]
+  },
+  {
+   "id": "face_085_chin_down",
+   "base_id": "face_085",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_085.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1330659148,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_085_chin_down.png",
+   "sha256": "819dd4583846ca10a571344e90c931d84723ad5795bb588c76d72ae0270b9dbe",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    232
+   ]
+  },
+  {
+   "id": "face_086_angry",
+   "base_id": "face_086",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_086.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1939180507,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_086_angry.png",
+   "sha256": "09f59d9d681aa643a6874f6783caf1dc96159e126a98f096954293eb4fa38c35",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    234
+   ]
+  },
+  {
+   "id": "face_087_chin_up",
+   "base_id": "face_087",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_087.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1451728450,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_087_chin_up.png",
+   "sha256": "ee8031b89ea4d5726171cc368737fd037ed60bd3a470fb419a892a26d262b88d",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    246
+   ]
+  },
+  {
+   "id": "face_088_disappointed",
+   "base_id": "face_088",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_088.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 755945579,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_088_disappointed.png",
+   "sha256": "3594fb8d20e7c5346dcf0c5e0b996c8b91fc454bfbad5ea77e3a6d39e1167770",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    233
+   ]
+  },
+  {
+   "id": "face_089_threeq_r",
+   "base_id": "face_089",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_089.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 144905707,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_089_threeq_r.png",
+   "sha256": "2c272b84a470dd15a913751f54f4d0110e7cfe735592aae208f97c11d41b8c1e",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    244
+   ]
+  },
+  {
+   "id": "face_090_angry",
+   "base_id": "face_090",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_090.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1861446230,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_090_angry.png",
+   "sha256": "0e46607c9f81e9cb55fc65505a658f0aa74e3c58f28054cffcde21ae5d9986ce",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    226
+   ]
+  },
+  {
+   "id": "face_091_chin_up",
+   "base_id": "face_091",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_091.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1594580488,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_091_chin_up.png",
+   "sha256": "5d8787bf95a7ca792c56188b38627d29de2b1372968bc815b7855dd9a35f6c4c",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    245
+   ]
+  },
+  {
+   "id": "face_092_tired",
+   "base_id": "face_092",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_092.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1154879021,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_092_tired.png",
+   "sha256": "fe76ebb6251fb30629e236f27b3c9d41f790cc5bd26c61f70a8d696c17ef849a",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    238
+   ]
+  },
+  {
+   "id": "face_093_chin_down",
+   "base_id": "face_093",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_093.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1513016193,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_093_chin_down.png",
+   "sha256": "260eddbe1a39f89ed3685e99d16d67d6ce8974616095b225e93220bc2d634f79",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    242
+   ]
+  },
+  {
+   "id": "face_094_angry",
+   "base_id": "face_094",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_094.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 782809324,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_094_angry.png",
+   "sha256": "e13558310718af3d1381e21b040e699b7495af0c21100cf3856f92d71d4d10ea",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    5,
+    240
+   ]
+  },
+  {
+   "id": "face_095_threeq_r",
+   "base_id": "face_095",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_095.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1993917089,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_095_threeq_r.png",
+   "sha256": "48e17f2279f99f549e09e3f77da6eb8337a57a4461dbb2ef8753b86dc0721eab",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    238
+   ]
+  },
+  {
+   "id": "face_096_tired",
+   "base_id": "face_096",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_096.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 133675879,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_096_tired.png",
+   "sha256": "ca5a67f77c6cdadd482561000871917fe5234a8af7496d7b4b7c094e9515167a",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    237
+   ]
+  },
+  {
+   "id": "face_097_threeq_r",
+   "base_id": "face_097",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_097.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 581530852,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_097_threeq_r.png",
+   "sha256": "e7c842212d25fb8a10f02dd4ec17c604113d3f260b56ad02a89a36ea3f618677",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    254
+   ]
+  },
+  {
+   "id": "face_098_smiling",
+   "base_id": "face_098",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_098.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1979905381,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_098_smiling.png",
+   "sha256": "fe7080085fd7e140ad299935c1ccefbaa84cf43289cb9a3953ed3a92b2dbbedf",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    237
+   ]
+  },
+  {
+   "id": "face_099_chin_up",
+   "base_id": "face_099",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_099.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1858337917,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_099_chin_up.png",
+   "sha256": "b068e82ce0ee66015c061501a197eb90ebde37d2f1e5e4eddb971e7e4a2337e8",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    245
+   ]
+  },
+  {
+   "id": "face_100_disappointed",
+   "base_id": "face_100",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_100.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 792267207,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_100_disappointed.png",
+   "sha256": "6206bbd5b5150662d3c3c68d2f7433d27e70925cba4c6c85b72cbfd608afe4cd",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    240
+   ]
+  },
+  {
+   "id": "face_101_chin_up",
+   "base_id": "face_101",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_101.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 142802513,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_101_chin_up.png",
+   "sha256": "45cc3d15ec5d80d157a712199c4d4dbcb0d026ebece39cf3c15bcd21bba044d9",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    226
+   ]
+  },
+  {
+   "id": "face_102_smiling",
+   "base_id": "face_102",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_102.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 53000470,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_102_smiling.png",
+   "sha256": "9de6c895983a531a7e8d3f413ed3c258762d6b36882c5843b722f3f7bc06565d",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    245
+   ]
+  },
+  {
+   "id": "face_103_threeq_r",
+   "base_id": "face_103",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_103.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 711197922,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_103_threeq_r.png",
+   "sha256": "2699e128809027433f615f44539aed2e1d7d7436ce3710fc0c79c0cb30ea20fa",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    243
+   ]
+  },
+  {
+   "id": "face_104_surprised",
+   "base_id": "face_104",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_104.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 75921565,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_104_surprised.png",
+   "sha256": "7591aea02821a375a9219a5a2a66113c4bb4763248efc8410b4bc38bf3915f4f",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    5,
+    238
+   ]
+  },
+  {
+   "id": "face_105_threeq_r",
+   "base_id": "face_105",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_105.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 446705151,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_105_threeq_r.png",
+   "sha256": "eab6013f3703e5cc6a7d2a6c988f1b194f7d6bf34ac2368fa4b315c252521993",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    254
+   ]
+  },
+  {
+   "id": "face_106_disappointed",
+   "base_id": "face_106",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_106.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2003996363,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_106_disappointed.png",
+   "sha256": "883e1796724aa9fc9153054ee0559c15e22f7ddb6295ddc902aae01678a8bd70",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    244
+   ]
+  },
+  {
+   "id": "face_107_threeq_l",
+   "base_id": "face_107",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_107.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 785817502,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_107_threeq_l.png",
+   "sha256": "d32f0b9a251c1a0b14652a1c8ce0d3e6b4150334f888a828be11d7edc6404d01",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    247
+   ]
+  },
+  {
+   "id": "face_108_angry",
+   "base_id": "face_108",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_108.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2135676661,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_108_angry.png",
+   "sha256": "81d1da229fc1bb0d850d8d608fe5970deed3167329f9f7cc4f29f9ca67466c88",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    248
+   ]
+  },
+  {
+   "id": "face_109_threeq_l",
+   "base_id": "face_109",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_109.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1417376111,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_109_threeq_l.png",
+   "sha256": "b27f0db4c2cd42cc051202191c29b3aca0d0b099d47271f82c2f9a06c959d48e",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    238
+   ]
+  },
+  {
+   "id": "face_110_tired",
+   "base_id": "face_110",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_110.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1122374243,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_110_tired.png",
+   "sha256": "04b105a2718e90c0407c1af8323ee0fa5aae26a011e3455734aca3b88096e834",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    6,
+    237
+   ]
+  },
+  {
+   "id": "face_111_chin_down",
+   "base_id": "face_111",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_111.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 917815323,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_111_chin_down.png",
+   "sha256": "e0f15716262fcfe9a1f3e4be99d537e421714f84802d53f6ed8f3f9eb31d9f88",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    237
+   ]
+  },
+  {
+   "id": "face_112_surprised",
+   "base_id": "face_112",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_112.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1780042762,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_112_surprised.png",
+   "sha256": "d81a3f6e68be5af1db095b4160ebe5a6db60f0c6424f2f00efdd4771e6b534c8",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    236
+   ]
+  },
+  {
+   "id": "face_113_threeq_r",
+   "base_id": "face_113",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_113.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1023252552,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_113_threeq_r.png",
+   "sha256": "14a4cc9c4c9119ae601d99e6ab3ba20bf890634746d75e2bfcd9db526980beb2",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    222
+   ]
+  },
+  {
+   "id": "face_114_angry",
+   "base_id": "face_114",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_114.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1476222999,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_114_angry.png",
+   "sha256": "b3a512c5e8e6fdd4602c499e968362444e244833f9b3e69350e66f005838aa23",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    245
+   ]
+  },
+  {
+   "id": "face_115_chin_up",
+   "base_id": "face_115",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_115.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 473681935,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_115_chin_up.png",
+   "sha256": "05659848a68bed8e6d8fbc98d2fc68f35d43d0b6cfcad36d632bc3c080b24221",
+   "seconds": 105.1,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    235
+   ]
+  },
+  {
+   "id": "face_116_surprised",
+   "base_id": "face_116",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_116.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1549589582,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_116_surprised.png",
+   "sha256": "ddec9b8d2c7c97246e27f039af5d5d6f71a5075f87b8fab8e9a931b5b0f605cf",
+   "seconds": 105.2,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    251
+   ]
+  },
+  {
+   "id": "face_117_chin_up",
+   "base_id": "face_117",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_117.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1220915349,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_117_chin_up.png",
+   "sha256": "b4ed99d6e28edcaeee4416b2f6fd451cdbbfd81b6bfcdcdd22fcbca6b668f217",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    252
+   ]
+  },
+  {
+   "id": "face_118_disappointed",
+   "base_id": "face_118",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_118.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 576423872,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_118_disappointed.png",
+   "sha256": "c8cf673d3faf6431008c68fa5c7a5815fae04cd8de47421b879a2af8930c7b14",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    5,
+    237
+   ]
+  },
+  {
+   "id": "face_119_threeq_r",
+   "base_id": "face_119",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_119.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1272278493,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_119_threeq_r.png",
+   "sha256": "dbfa8a23a641fdb9cf2b7327113bcf7b9ddd5e5be529ac3964c560807efb56c8",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    248
+   ]
+  },
+  {
+   "id": "face_120_tired",
+   "base_id": "face_120",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_120.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 831285657,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_120_tired.png",
+   "sha256": "3186667c1d90f7fcf36550032d835c9a7a99229518b7a5b05b661153837871e1",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    246
+   ]
+  },
+  {
+   "id": "face_121_threeq_r",
+   "base_id": "face_121",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_121.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 195827198,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_121_threeq_r.png",
+   "sha256": "387614ef8ca3de0db441889f2436adccf6b5474b819c8a59a85de6b4160c8cda",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    230
+   ]
+  },
+  {
+   "id": "face_122_tired",
+   "base_id": "face_122",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_122.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1034174357,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_122_tired.png",
+   "sha256": "db06875007741da03a5392777fe643874f8827932100ae1d3c86f7a554b1fc59",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    251
+   ]
+  },
+  {
+   "id": "face_123_chin_up",
+   "base_id": "face_123",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_123.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 449871323,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_123_chin_up.png",
+   "sha256": "4a175e6282bacf3a8b462516429eaad2ee90d2b40b358de87355d865e72b99a2",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    244
+   ]
+  },
+  {
+   "id": "face_124_surprised",
+   "base_id": "face_124",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_124.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1111263472,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_124_surprised.png",
+   "sha256": "eea3dfbde1ff31bbbcc8df95f829355e3e70a424cdaff9854a5a793595d53851",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    7,
+    230
+   ]
+  },
+  {
+   "id": "face_125_chin_up",
+   "base_id": "face_125",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_125.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1229683803,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_125_chin_up.png",
+   "sha256": "6841f279c32fe46a6dd82c73b50e3667b4a2268b33c138f427bb73dffcec4e49",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    241
+   ]
+  },
+  {
+   "id": "face_126_angry",
+   "base_id": "face_126",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_126.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1824856929,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_126_angry.png",
+   "sha256": "e78e37e5feaf8848c21d56615580b0574f8b528202f2eb96600acca32aa198f2",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    231
+   ]
+  },
+  {
+   "id": "face_127_threeq_l",
+   "base_id": "face_127",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_127.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 226956670,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_127_threeq_l.png",
+   "sha256": "e3d5e70fbce94dc90f6f7bdf453a9097b0297500ecf57a28378116735aaefe09",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    243
+   ]
+  },
+  {
+   "id": "face_128_tired",
+   "base_id": "face_128",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_128.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 344986386,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_128_tired.png",
+   "sha256": "f927d22657181cdeabae1f07f1546995a73004e123e50390d76e534665da7b76",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    242
+   ]
+  },
+  {
+   "id": "face_129_threeq_l",
+   "base_id": "face_129",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_129.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 654306291,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_129_threeq_l.png",
+   "sha256": "0abb5720a4ce1188622379a7c534bf8ba8ad2ddda8b80c7031aaa6557a9213ce",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    6,
+    223
+   ]
+  },
+  {
+   "id": "face_130_angry",
+   "base_id": "face_130",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_130.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 938190732,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_130_angry.png",
+   "sha256": "9f2d0a1626b26503109c4a1a6943ecd96d4dbbccac4b81b09636886b72070fcb",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    251
+   ]
+  },
+  {
+   "id": "face_131_threeq_r",
+   "base_id": "face_131",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_131.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 177220193,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_131_threeq_r.png",
+   "sha256": "a48492aab91f0f2f26a13e5b0fb3b04ab7853edd2898c25b2107ce0d01028a53",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    241
+   ]
+  },
+  {
+   "id": "face_132_disappointed",
+   "base_id": "face_132",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_132.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 432298136,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_132_disappointed.png",
+   "sha256": "e02ebdf8ffd6bd417881c3475306200ba715e2eb62a942eab7a7399e40d325f6",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    239
+   ]
+  },
+  {
+   "id": "face_133_threeq_l",
+   "base_id": "face_133",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_133.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1558297079,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_133_threeq_l.png",
+   "sha256": "9c9a09f0de23351cc5bcccf35d9511a1d913a89069949a72af632f335cfdbf33",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    239
+   ]
+  },
+  {
+   "id": "face_134_smiling",
+   "base_id": "face_134",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_134.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 274577315,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_134_smiling.png",
+   "sha256": "4374489234eae2f14fbe74e5a728b9a3ffca3f751be188c8c66c89836be4b3e1",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    228
+   ]
+  },
+  {
+   "id": "face_135_chin_down",
+   "base_id": "face_135",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_135.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 186357417,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_135_chin_down.png",
+   "sha256": "017fd00e49daeb599f28471c8813a3f2357b69f2d0133c3b7aedc042bb531de9",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    255
+   ]
+  },
+  {
+   "id": "face_136_tired",
+   "base_id": "face_136",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_136.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 226128161,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_136_tired.png",
+   "sha256": "5d4d2942d7521841523ac829c340e04cb7725331f1d7c1736387d7203d4e7d1b",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    230
+   ]
+  },
+  {
+   "id": "face_137_chin_down",
+   "base_id": "face_137",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_137.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1087497805,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_137_chin_down.png",
+   "sha256": "424fafad36027d381fb77d843296013cfe9d2ca2afa93afba12918f7747a6d1f",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    236
+   ]
+  },
+  {
+   "id": "face_138_smiling",
+   "base_id": "face_138",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_138.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 445854433,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_138_smiling.png",
+   "sha256": "68403610a44713e8b50c1d118c5c4f15e63d9fe778529f93e885f101d115e138",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    5,
+    234
+   ]
+  },
+  {
+   "id": "face_139_chin_down",
+   "base_id": "face_139",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_139.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1808862332,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_139_chin_down.png",
+   "sha256": "6c63362b760b1beb311591ff7b4febcdaca3a5a861aa7a5d1d73094b880867db",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    8,
+    254
+   ]
+  },
+  {
+   "id": "face_140_tired",
+   "base_id": "face_140",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_140.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 551564354,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_140_tired.png",
+   "sha256": "6a824391ac74341f1ce4977b675ce2f5ee4eb0fc0b683c593763bc8958fd99e4",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    238
+   ]
+  },
+  {
+   "id": "face_141_threeq_r",
+   "base_id": "face_141",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_141.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 692766343,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_141_threeq_r.png",
+   "sha256": "7db1dd8a899f20cbee3f0dc46c641d36639f49e0744eadf2c8519937d8c99a90",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    239
+   ]
+  },
+  {
+   "id": "face_142_tired",
+   "base_id": "face_142",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_142.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1556980103,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_142_tired.png",
+   "sha256": "c7a1a65c8acff8b7b78cdfde703c40a70b84a6bdb62c2f46043d802b420c635a",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    246
+   ]
+  },
+  {
+   "id": "face_143_threeq_l",
+   "base_id": "face_143",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_143.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 727532125,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_143_threeq_l.png",
+   "sha256": "6ad7137da15211247ba429484cc4321654abab86c7f66967bec826bf8242c911",
+   "seconds": 105.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    254
+   ]
+  },
+  {
+   "id": "face_144_surprised",
+   "base_id": "face_144",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_144.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 396006291,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_144_surprised.png",
+   "sha256": "05320baf41b4f86586278aec4377fa79bfd4abc37d1f52744cd8ee3bd1048aa7",
+   "seconds": 105.2,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    229
+   ]
+  },
+  {
+   "id": "face_145_chin_up",
+   "base_id": "face_145",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_145.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1261262252,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_145_chin_up.png",
+   "sha256": "36969638f8aa8a104fc780a3c9cde8e8ec27a7c7e7163fb08231cbca12764b77",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    249
+   ]
+  },
+  {
+   "id": "face_146_tired",
+   "base_id": "face_146",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_146.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 964244301,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_146_tired.png",
+   "sha256": "d62b98e6e22336fcf6ca96879b31c243caaadc4b201555e90f1be1408f3b5ebc",
+   "seconds": 105.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    216
+   ]
+  },
+  {
+   "id": "face_147_threeq_r",
+   "base_id": "face_147",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_147.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 342921328,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_147_threeq_r.png",
+   "sha256": "c509b93f71bf10e3c1cedd26366397a8f656bd9ed2557f1ffee2e61ef933de35",
+   "seconds": 106.2,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    248
+   ]
+  },
+  {
+   "id": "face_148_disappointed",
+   "base_id": "face_148",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_148.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1204677989,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_148_disappointed.png",
+   "sha256": "7f66a0d0092ac3e492ced5f5872240b53c9f87ae8060777e1edc12e445a61eee",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    243
+   ]
+  },
+  {
+   "id": "face_149_chin_up",
+   "base_id": "face_149",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_149.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2055741735,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_149_chin_up.png",
+   "sha256": "d1675883b15e2ff2d813f5c9ea309923737bc9284fc19ee707a6f27bc5d26fad",
+   "seconds": 105.1,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    241
+   ]
+  },
+  {
+   "id": "face_150_tired",
+   "base_id": "face_150",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_150.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 873084389,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_150_tired.png",
+   "sha256": "7bcb5116c0f302a09e6754e88c8546c2652160d1e0e8bc9e9d4da7ad89e47e2f",
+   "seconds": 105.2,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    236
+   ]
+  },
+  {
+   "id": "face_151_threeq_r",
+   "base_id": "face_151",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_151.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2034705923,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_151_threeq_r.png",
+   "sha256": "5a7148d8dfcd81a9fe7297cd932b9b48b882fa3736a6346ddfc9ada0e080d523",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    238
+   ]
+  },
+  {
+   "id": "face_152_smiling",
+   "base_id": "face_152",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_152.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 568463651,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_152_smiling.png",
+   "sha256": "72deb4cd148c8e555defae3a92baa9dc7a932dd1bccd7398b86bf97266b0c9a4",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    252
+   ]
+  },
+  {
+   "id": "face_153_threeq_l",
+   "base_id": "face_153",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_153.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1996939511,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_153_threeq_l.png",
+   "sha256": "b0574ee88e0d537555482fc796ff63b8e6d0cef5d74f0be5167d59bc4dc4d2e4",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    236
+   ]
+  },
+  {
+   "id": "face_154_tired",
+   "base_id": "face_154",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_154.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 974522033,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_154_tired.png",
+   "sha256": "b3d63a30263febb635fe836fa39037253fd8afddc9dd4ba4e4bd6c1245de78df",
+   "seconds": 105.2,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    227
+   ]
+  },
+  {
+   "id": "face_155_threeq_r",
+   "base_id": "face_155",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_155.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 268230917,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_155_threeq_r.png",
+   "sha256": "63c9abaea1340ad4fb13076cfeae5041606af9c1a824daf02f6d1dcb338af296",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    6,
+    239
+   ]
+  },
+  {
+   "id": "face_156_smiling",
+   "base_id": "face_156",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_156.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1521220392,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_156_smiling.png",
+   "sha256": "0727d288dbdee61520b050782b2be5b2c6f72f03491cb508c43d84e1919eaee7",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    238
+   ]
+  },
+  {
+   "id": "face_157_threeq_l",
+   "base_id": "face_157",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_157.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1329073468,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_157_threeq_l.png",
+   "sha256": "bb7966f7f787598d0e6d57150c0f248129d1e9e29764b5890855cb1c4f5aec8d",
+   "seconds": 105.1,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    243
+   ]
+  },
+  {
+   "id": "face_158_disappointed",
+   "base_id": "face_158",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_158.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 876831881,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_158_disappointed.png",
+   "sha256": "4b542b8ceefd0b15af90972a8557d732fd2ec2452ee0228bc0d73413b5446a99",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    231
+   ]
+  },
+  {
+   "id": "face_159_chin_down",
+   "base_id": "face_159",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_159.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 343658881,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_159_chin_down.png",
+   "sha256": "3a38ec350ecfb24ea502dd70c9e06f52f5a52d60b3853663d254c72e4b6b1a23",
+   "seconds": 105.4,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    245
+   ]
+  },
+  {
+   "id": "face_160_angry",
+   "base_id": "face_160",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_160.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2050095928,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_160_angry.png",
+   "sha256": "ad2deae36ae37cec682c3cb4cce012bb0120e13466b10460c05afbf4b67ef453",
+   "seconds": 106.2,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    232
+   ]
+  },
+  {
+   "id": "face_161_threeq_l",
+   "base_id": "face_161",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_161.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1194673871,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_161_threeq_l.png",
+   "sha256": "87769032c967ad7bdbb0bdaebe293162b409f7badd688b3900429b3831db93ef",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    237
+   ]
+  },
+  {
+   "id": "face_162_angry",
+   "base_id": "face_162",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_162.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1756415061,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_162_angry.png",
+   "sha256": "0006f6b23674274dd8aed9494985a3121f9acd3e890affc675544a19f4f9da70",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    230
+   ]
+  },
+  {
+   "id": "face_163_chin_up",
+   "base_id": "face_163",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_163.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2141413063,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_163_chin_up.png",
+   "sha256": "78d55fd59008eacd341d80d011e0add2f9aa2b1b495bf7ac8950ec5d781111b7",
+   "seconds": 105.1,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    231
+   ]
+  },
+  {
+   "id": "face_164_surprised",
+   "base_id": "face_164",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_164.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 583294825,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_164_surprised.png",
+   "sha256": "d8371d6140c2bc171e0bb08d64610d4f81d7f07f0790840085e476228b581bab",
+   "seconds": 105.3,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    237
+   ]
+  },
+  {
+   "id": "face_165_threeq_l",
+   "base_id": "face_165",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_165.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1422912497,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_165_threeq_l.png",
+   "sha256": "67acf6cade22ed0263ee08ba511a69307725fa4b9a30a698d887b9d691c70e93",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    237
+   ]
+  },
+  {
+   "id": "face_166_surprised",
+   "base_id": "face_166",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_166.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 892710816,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_166_surprised.png",
+   "sha256": "58179f60cbedc0e42d2a9f520f46c5c6a9f61c87424594ca2ed7ad75a07a49e8",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    254
+   ]
+  },
+  {
+   "id": "face_167_chin_up",
+   "base_id": "face_167",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_167.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1763051182,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_167_chin_up.png",
+   "sha256": "3ba30a5e664c2fb562e8a4ab13def97192a29949f2df1a1d7e1266a0a310a61e",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    225
+   ]
+  },
+  {
+   "id": "face_168_surprised",
+   "base_id": "face_168",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_168.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2047061251,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_168_surprised.png",
+   "sha256": "4912ae135b274887f3b0474411b383a667baca3d939b18769505e4e3fdfa8eee",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    5,
+    242
+   ]
+  },
+  {
+   "id": "face_169_threeq_r",
+   "base_id": "face_169",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_169.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 627421781,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_169_threeq_r.png",
+   "sha256": "c693abadc0c8d154d4016c006dcf168c9d2edbf86da86aa37fd73a333a2ce335",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    234
+   ]
+  },
+  {
+   "id": "face_170_angry",
+   "base_id": "face_170",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_170.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 415039328,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_170_angry.png",
+   "sha256": "5203c31ee08335d6bcaf4a1b0324edff529df992ff0027b291f97fdabd6c4cce",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    245
+   ]
+  },
+  {
+   "id": "face_171_chin_up",
+   "base_id": "face_171",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_171.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 693260396,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_171_chin_up.png",
+   "sha256": "0f8c5a30ddf0ce72ed5bfb60ec21f0218217a33b7ba0c8a3b69dc333f2def54f",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    253
+   ]
+  },
+  {
+   "id": "face_172_disappointed",
+   "base_id": "face_172",
+   "kind": "disappointed",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_172.png",
+   "prompt": "Make the person frown with disappointment, mouth turned down, eyes cast down, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2023778560,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_172_disappointed.png",
+   "sha256": "93076cd6be8d306df19b68776df6a76d1221eb8e591bf125e0bcbbe06f50f21a",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    224
+   ]
+  },
+  {
+   "id": "face_173_chin_down",
+   "base_id": "face_173",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_173.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 560724650,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_173_chin_down.png",
+   "sha256": "8e6f52b37331348efeb264228d130b3ff959bbbfab071778a6f320a4816255ca",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    234
+   ]
+  },
+  {
+   "id": "face_174_angry",
+   "base_id": "face_174",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_174.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2131962086,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_174_angry.png",
+   "sha256": "e7b1f9807dfb62a209d202f3a86c9e8430a1b73fa61aea4eb88678b2f30f9060",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    242
+   ]
+  },
+  {
+   "id": "face_175_threeq_r",
+   "base_id": "face_175",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_175.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1513109096,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_175_threeq_r.png",
+   "sha256": "5679bcdfada3200ec6b139a82195c50c71c123580d2507ab038d61bd75b5f0d8",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    236
+   ]
+  },
+  {
+   "id": "face_176_angry",
+   "base_id": "face_176",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_176.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1964107149,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_176_angry.png",
+   "sha256": "334a335e7d5853ceb27d8582df61ef2d1a1ca742d4ca1f5b1d884ac902825769",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    250
+   ]
+  },
+  {
+   "id": "face_177_chin_down",
+   "base_id": "face_177",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_177.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 479192677,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_177_chin_down.png",
+   "sha256": "574ae2665ee47e88d82f7c4aabd6beb8068980a9ae774ab185e25c1d74dd266f",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    248
+   ]
+  },
+  {
+   "id": "face_178_tired",
+   "base_id": "face_178",
+   "kind": "tired",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_178.png",
+   "prompt": "Make the person look exhausted, eyelids heavy and half closed, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 404424269,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_178_tired.png",
+   "sha256": "b39803e7746c6bb1dce3768fbe8d0a926858d92b85f620489f1533014346938a",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    242
+   ]
+  },
+  {
+   "id": "face_179_chin_up",
+   "base_id": "face_179",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_179.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 184341057,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_179_chin_up.png",
+   "sha256": "953e129710745a0ed86b3b57569b42573511b9d6a9806e791a08e325b6295745",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    247
+   ]
+  },
+  {
+   "id": "face_180_angry",
+   "base_id": "face_180",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_180.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1329691249,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_180_angry.png",
+   "sha256": "c6d82a1d4d9f70e8b83d5bf637a9df696a5ad1f3785f70aef0b34197c518f512",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    241
+   ]
+  },
+  {
+   "id": "face_181_threeq_l",
+   "base_id": "face_181",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_181.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 934068388,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_181_threeq_l.png",
+   "sha256": "a1732fb498e75685280565046088886b7417ee06d9dfc722dc47f9f06ffd293d",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    248
+   ]
+  },
+  {
+   "id": "face_182_surprised",
+   "base_id": "face_182",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_182.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1228773542,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_182_surprised.png",
+   "sha256": "55ce77fad3e07d8ebefffc8174e5f1240a83e26baee38ad1c09b921900391392",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    3,
+    229
+   ]
+  },
+  {
+   "id": "face_183_threeq_r",
+   "base_id": "face_183",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_183.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 15155519,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_183_threeq_r.png",
+   "sha256": "2efe04a357f3200752275a3c3dd3162f0061f96f4eea2cf831efe38e00b69ae5",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    5,
+    227
+   ]
+  },
+  {
+   "id": "face_184_angry",
+   "base_id": "face_184",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_184.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 757255078,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_184_angry.png",
+   "sha256": "775c7bd5a090071364666adce7a145359e6a8810043540d71f05f70f095d10a1",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    243
+   ]
+  },
+  {
+   "id": "face_185_chin_down",
+   "base_id": "face_185",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_185.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 2049440389,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_185_chin_down.png",
+   "sha256": "84e2a0767f52dba3f240b51d6bca8e4e9550f1caf46b552f8659a30426048158",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    253
+   ]
+  },
+  {
+   "id": "face_186_smiling",
+   "base_id": "face_186",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_186.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1735506964,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_186_smiling.png",
+   "sha256": "b7e24ee8b6b83eef6b6b15c00376d8cb66f56f7dfe3d3eeebcf9b99fbb4a8733",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    236
+   ]
+  },
+  {
+   "id": "face_187_chin_up",
+   "base_id": "face_187",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_187.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 300959074,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_187_chin_up.png",
+   "sha256": "08eef1efed21141d470432a6fa371607503acfcd06c44d75febcd5ea654d1b81",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    249
+   ]
+  },
+  {
+   "id": "face_188_angry",
+   "base_id": "face_188",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_188.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1810287919,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_188_angry.png",
+   "sha256": "bf80d36fa7832ad03665bdb8bc92cf3621f79e1fab3276eca52eb22041151588",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    254
+   ]
+  },
+  {
+   "id": "face_189_chin_down",
+   "base_id": "face_189",
+   "kind": "chin_down",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_189.png",
+   "prompt": "Tilt the head downward so the face is angled toward the floor, eyes toward the camera, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1131329365,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_189_chin_down.png",
+   "sha256": "e4371c553cfddfeb0e76d14e635c635502b5e4e4d89c3bc8812d45bb047de079",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    2,
+    234
+   ]
+  },
+  {
+   "id": "face_190_surprised",
+   "base_id": "face_190",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_190.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 86613901,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_190_surprised.png",
+   "sha256": "5372daf2b250c99d217585d9f5d2c0443f9ea47f78fa0b36b02735617d89de94",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    233
+   ]
+  },
+  {
+   "id": "face_191_threeq_r",
+   "base_id": "face_191",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_191.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 722445823,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_191_threeq_r.png",
+   "sha256": "d2ee9d21c5190492a2bfea98472a7277f54f125ea43947b8606c9ebb29463cd5",
+   "seconds": 104.9,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    254
+   ]
+  },
+  {
+   "id": "face_192_smiling",
+   "base_id": "face_192",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_192.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 825457520,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_192_smiling.png",
+   "sha256": "dbf53babaed82058642954aeebe487bea44e70cc9e2027d3841728578e5ceeed",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    249
+   ]
+  },
+  {
+   "id": "face_193_threeq_l",
+   "base_id": "face_193",
+   "kind": "threeq_l",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_193.png",
+   "prompt": "Turn the head well to the left so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 67515416,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_193_threeq_l.png",
+   "sha256": "f8da632a9c130bb9d1d11484b528de3a74bece67aa2174c7bdb908dab7739945",
+   "seconds": 104.7,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    230
+   ]
+  },
+  {
+   "id": "face_194_angry",
+   "base_id": "face_194",
+   "kind": "angry",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_194.png",
+   "prompt": "Make the person scowl angrily, brows drawn down and together, jaw clenched, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1588882077,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_194_angry.png",
+   "sha256": "07f7cfaa010351ba4e48533297376d06cc3086167e2d24b7fc77bee0e0d805be",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    240
+   ]
+  },
+  {
+   "id": "face_195_chin_up",
+   "base_id": "face_195",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_195.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1245492681,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_195_chin_up.png",
+   "sha256": "bdecb90122c1f4da95056fca094d7009e9704cea2bdc73e3c43c5bb41e6a9826",
+   "seconds": 104.8,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    247
+   ]
+  },
+  {
+   "id": "face_196_smiling",
+   "base_id": "face_196",
+   "kind": "smiling",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_196.png",
+   "prompt": "Make the person smile broadly, teeth showing, eyes crinkled, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 330023367,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_196_smiling.png",
+   "sha256": "2a663235b9fae814e779c24ed204a1ad420a8dc419035078c2de99faa848d2e5",
+   "seconds": 105.2,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    4,
+    222
+   ]
+  },
+  {
+   "id": "face_197_chin_up",
+   "base_id": "face_197",
+   "kind": "chin_up",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_197.png",
+   "prompt": "Lift the chin so the face is angled upward, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1666036166,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_197_chin_up.png",
+   "sha256": "8feed45a692a6092bb642c3eee2976757551f2e42b76b165f9c5cacd11d98ec7",
+   "seconds": 105.0,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    1,
+    247
+   ]
+  },
+  {
+   "id": "face_198_surprised",
+   "base_id": "face_198",
+   "kind": "surprised",
+   "mode": "expression",
+   "base_file": "spike_out/pool/face_198.png",
+   "prompt": "Make the person look startled, eyes wide open, eyebrows raised high, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 1692266620,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_198_surprised.png",
+   "sha256": "8d301dbe0f7730071dcd824870d48513d387de87eb023c87a07d9e6a14a9be87",
+   "seconds": 104.5,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    5,
+    243
+   ]
+  },
+  {
+   "id": "face_199_threeq_r",
+   "base_id": "face_199",
+   "kind": "threeq_r",
+   "mode": "angle",
+   "base_file": "spike_out/pool/face_199.png",
+   "prompt": "Turn the head well to the right so the face is seen in three-quarter view, in a full-length standing photograph of the same person showing the whole body from head to feet, wearing completely different everyday clothing, plain light grey studio wall behind, arms relaxed at the sides, even lighting, keep the same person, same hair, photographic",
+   "width": 832,
+   "height": 1216,
+   "seed": 613628493,
+   "prompt_seed": 20260920,
+   "file": "spike_out/variants/face_199_threeq_r.png",
+   "sha256": "a15d0e18ca08c49ce5f759b35081ece0100f2bbdab34c44769e593043f8573da",
+   "seconds": 104.6,
+   "size": [
+    832,
+    1216
+   ],
+   "luma_range": [
+    0,
+    229
+   ]
+  }
+ ]
+}

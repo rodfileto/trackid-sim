@@ -1,0 +1,1641 @@
+{
+ "summary": {
+  "amarela": {
+   "n": 1,
+   "median": 51.6,
+   "p10": 51.6,
+   "p90": 51.6,
+   "band": "light"
+  },
+  "branca": {
+   "n": 87,
+   "median": 33.4,
+   "p10": 18.6,
+   "p90": 43.5,
+   "band": "intermediate"
+  },
+  "indigena": {
+   "n": 1,
+   "median": 7.1,
+   "p10": 7.1,
+   "p90": 7.1,
+   "band": "brown"
+  },
+  "parda": {
+   "n": 91,
+   "median": 4.1,
+   "p10": -15.6,
+   "p90": 20.1,
+   "band": "brown"
+  },
+  "preta": {
+   "n": 20,
+   "median": -34.2,
+   "p10": -46.2,
+   "p90": -4.5,
+   "band": "dark"
+  }
+ },
+ "faces": [
+  {
+   "id": "face_000",
+   "ita": 4.8,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 31730
+  },
+  {
+   "id": "face_001",
+   "ita": -9.1,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "deep tan skin",
+   "pixels": 29511
+  },
+  {
+   "id": "face_002",
+   "ita": -11.5,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 32657
+  },
+  {
+   "id": "face_003",
+   "ita": 30.2,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 36902
+  },
+  {
+   "id": "face_004",
+   "ita": -4.6,
+   "band": "brown",
+   "asked_group": "preta",
+   "asked_tone": "dark brown skin",
+   "pixels": 31425
+  },
+  {
+   "id": "face_005",
+   "ita": 4.1,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 33921
+  },
+  {
+   "id": "face_006",
+   "ita": 20.1,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 36383
+  },
+  {
+   "id": "face_007",
+   "ita": 18.4,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 35171
+  },
+  {
+   "id": "face_008",
+   "ita": 18.9,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 35301
+  },
+  {
+   "id": "face_009",
+   "ita": 11.3,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 34587
+  },
+  {
+   "id": "face_010",
+   "ita": -15.4,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 33373
+  },
+  {
+   "id": "face_011",
+   "ita": 19.0,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 35504
+  },
+  {
+   "id": "face_012",
+   "ita": 28.1,
+   "band": "intermediate",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 36846
+  },
+  {
+   "id": "face_013",
+   "ita": 4.1,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 31984
+  },
+  {
+   "id": "face_014",
+   "ita": -38.6,
+   "band": "dark",
+   "asked_group": "preta",
+   "asked_tone": "dark brown skin",
+   "pixels": 31291
+  },
+  {
+   "id": "face_015",
+   "ita": 27.8,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 36674
+  },
+  {
+   "id": "face_016",
+   "ita": -42.8,
+   "band": "dark",
+   "asked_group": "preta",
+   "asked_tone": "dark brown skin",
+   "pixels": 34621
+  },
+  {
+   "id": "face_017",
+   "ita": -1.5,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "deep tan skin",
+   "pixels": 30553
+  },
+  {
+   "id": "face_018",
+   "ita": -7.2,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 33689
+  },
+  {
+   "id": "face_019",
+   "ita": 3.8,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 36971
+  },
+  {
+   "id": "face_020",
+   "ita": 0.0,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "deep tan skin",
+   "pixels": 35967
+  },
+  {
+   "id": "face_021",
+   "ita": -8.4,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "deep tan skin",
+   "pixels": 34372
+  },
+  {
+   "id": "face_022",
+   "ita": -26.6,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "deep tan skin",
+   "pixels": 29922
+  },
+  {
+   "id": "face_023",
+   "ita": -3.9,
+   "band": "brown",
+   "asked_group": "preta",
+   "asked_tone": "dark brown skin",
+   "pixels": 35947
+  },
+  {
+   "id": "face_024",
+   "ita": 19.4,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 32011
+  },
+  {
+   "id": "face_025",
+   "ita": 4.9,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 34089
+  },
+  {
+   "id": "face_026",
+   "ita": 20.1,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 35990
+  },
+  {
+   "id": "face_027",
+   "ita": 31.8,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 32747
+  },
+  {
+   "id": "face_028",
+   "ita": 43.6,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 34275
+  },
+  {
+   "id": "face_029",
+   "ita": 22.7,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 30400
+  },
+  {
+   "id": "face_030",
+   "ita": -4.9,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 28406
+  },
+  {
+   "id": "face_031",
+   "ita": -33.8,
+   "band": "dark",
+   "asked_group": "preta",
+   "asked_tone": "dark brown skin",
+   "pixels": 34088
+  },
+  {
+   "id": "face_032",
+   "ita": 18.0,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 36345
+  },
+  {
+   "id": "face_033",
+   "ita": -2.0,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 35425
+  },
+  {
+   "id": "face_034",
+   "ita": 7.1,
+   "band": "brown",
+   "asked_group": "indigena",
+   "asked_tone": "medium brown skin",
+   "pixels": 33206
+  },
+  {
+   "id": "face_035",
+   "ita": 15.8,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 30092
+  },
+  {
+   "id": "face_036",
+   "ita": 25.5,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 36853
+  },
+  {
+   "id": "face_037",
+   "ita": -16.2,
+   "band": "brown",
+   "asked_group": "preta",
+   "asked_tone": "deep brown skin",
+   "pixels": 30365
+  },
+  {
+   "id": "face_038",
+   "ita": 20.0,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 32790
+  },
+  {
+   "id": "face_039",
+   "ita": 14.9,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 27982
+  },
+  {
+   "id": "face_040",
+   "ita": -39.5,
+   "band": "dark",
+   "asked_group": "preta",
+   "asked_tone": "deep brown skin",
+   "pixels": 31255
+  },
+  {
+   "id": "face_041",
+   "ita": -45.7,
+   "band": "dark",
+   "asked_group": "preta",
+   "asked_tone": "very dark skin",
+   "pixels": 28262
+  },
+  {
+   "id": "face_042",
+   "ita": 37.6,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 27205
+  },
+  {
+   "id": "face_043",
+   "ita": -31.1,
+   "band": "dark",
+   "asked_group": "preta",
+   "asked_tone": "deep brown skin",
+   "pixels": 33878
+  },
+  {
+   "id": "face_044",
+   "ita": 15.5,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 32169
+  },
+  {
+   "id": "face_045",
+   "ita": -5.4,
+   "band": "brown",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 34366
+  },
+  {
+   "id": "face_046",
+   "ita": -8.2,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 32156
+  },
+  {
+   "id": "face_047",
+   "ita": 37.5,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 34690
+  },
+  {
+   "id": "face_048",
+   "ita": 27.7,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 36054
+  },
+  {
+   "id": "face_049",
+   "ita": 38.5,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 35773
+  },
+  {
+   "id": "face_050",
+   "ita": 43.5,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 35614
+  },
+  {
+   "id": "face_051",
+   "ita": 2.6,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 30496
+  },
+  {
+   "id": "face_052",
+   "ita": 9.0,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 33383
+  },
+  {
+   "id": "face_053",
+   "ita": 12.2,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 32917
+  },
+  {
+   "id": "face_054",
+   "ita": 5.0,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "deep tan skin",
+   "pixels": 33841
+  },
+  {
+   "id": "face_055",
+   "ita": 45.3,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 26623
+  },
+  {
+   "id": "face_056",
+   "ita": 3.2,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 28523
+  },
+  {
+   "id": "face_057",
+   "ita": 26.7,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 27268
+  },
+  {
+   "id": "face_058",
+   "ita": 18.3,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 34424
+  },
+  {
+   "id": "face_059",
+   "ita": 27.0,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 30997
+  },
+  {
+   "id": "face_060",
+   "ita": 46.8,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 34764
+  },
+  {
+   "id": "face_061",
+   "ita": -6.1,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "deep tan skin",
+   "pixels": 31005
+  },
+  {
+   "id": "face_062",
+   "ita": -49.8,
+   "band": "dark",
+   "asked_group": "preta",
+   "asked_tone": "dark brown skin",
+   "pixels": 34732
+  },
+  {
+   "id": "face_063",
+   "ita": -4.4,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 33055
+  },
+  {
+   "id": "face_064",
+   "ita": 38.5,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 37249
+  },
+  {
+   "id": "face_065",
+   "ita": 9.2,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 30184
+  },
+  {
+   "id": "face_066",
+   "ita": 6.0,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 30353
+  },
+  {
+   "id": "face_067",
+   "ita": 36.3,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 36325
+  },
+  {
+   "id": "face_068",
+   "ita": 30.3,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 29965
+  },
+  {
+   "id": "face_069",
+   "ita": 27.0,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 30268
+  },
+  {
+   "id": "face_070",
+   "ita": 35.4,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 31886
+  },
+  {
+   "id": "face_071",
+   "ita": 18.1,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 32126
+  },
+  {
+   "id": "face_072",
+   "ita": 43.0,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 35539
+  },
+  {
+   "id": "face_073",
+   "ita": 37.2,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 36842
+  },
+  {
+   "id": "face_074",
+   "ita": 6.3,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 30636
+  },
+  {
+   "id": "face_075",
+   "ita": -12.4,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "deep tan skin",
+   "pixels": 30451
+  },
+  {
+   "id": "face_076",
+   "ita": 36.2,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 32954
+  },
+  {
+   "id": "face_077",
+   "ita": 30.0,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 34447
+  },
+  {
+   "id": "face_078",
+   "ita": 5.0,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 32254
+  },
+  {
+   "id": "face_079",
+   "ita": 40.0,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 36885
+  },
+  {
+   "id": "face_080",
+   "ita": 1.5,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 27138
+  },
+  {
+   "id": "face_081",
+   "ita": 18.9,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 33689
+  },
+  {
+   "id": "face_082",
+   "ita": -33.3,
+   "band": "dark",
+   "asked_group": "preta",
+   "asked_tone": "deep brown skin",
+   "pixels": 28008
+  },
+  {
+   "id": "face_083",
+   "ita": 19.2,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 37842
+  },
+  {
+   "id": "face_084",
+   "ita": 0.4,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 30323
+  },
+  {
+   "id": "face_085",
+   "ita": 36.1,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 30458
+  },
+  {
+   "id": "face_086",
+   "ita": 34.4,
+   "band": "intermediate",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 36213
+  },
+  {
+   "id": "face_087",
+   "ita": 32.5,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 36881
+  },
+  {
+   "id": "face_088",
+   "ita": 35.2,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 34546
+  },
+  {
+   "id": "face_089",
+   "ita": 43.7,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 35814
+  },
+  {
+   "id": "face_090",
+   "ita": -5.1,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 34449
+  },
+  {
+   "id": "face_091",
+   "ita": -18.6,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 32969
+  },
+  {
+   "id": "face_092",
+   "ita": 15.5,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 33499
+  },
+  {
+   "id": "face_093",
+   "ita": 8.1,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 32356
+  },
+  {
+   "id": "face_094",
+   "ita": 30.5,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 36079
+  },
+  {
+   "id": "face_095",
+   "ita": 23.1,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 34805
+  },
+  {
+   "id": "face_096",
+   "ita": 32.0,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 33491
+  },
+  {
+   "id": "face_097",
+   "ita": 51.6,
+   "band": "light",
+   "asked_group": "amarela",
+   "asked_tone": "light skin",
+   "pixels": 35609
+  },
+  {
+   "id": "face_098",
+   "ita": 45.4,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 36675
+  },
+  {
+   "id": "face_099",
+   "ita": -15.6,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 28023
+  },
+  {
+   "id": "face_100",
+   "ita": 8.7,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 33280
+  },
+  {
+   "id": "face_101",
+   "ita": 33.4,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 32261
+  },
+  {
+   "id": "face_102",
+   "ita": 41.8,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 23996
+  },
+  {
+   "id": "face_103",
+   "ita": -25.4,
+   "band": "brown",
+   "asked_group": "preta",
+   "asked_tone": "dark brown skin",
+   "pixels": 30382
+  },
+  {
+   "id": "face_104",
+   "ita": 18.9,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 37269
+  },
+  {
+   "id": "face_105",
+   "ita": -2.0,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 30111
+  },
+  {
+   "id": "face_106",
+   "ita": 1.4,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 31876
+  },
+  {
+   "id": "face_107",
+   "ita": -26.4,
+   "band": "brown",
+   "asked_group": "preta",
+   "asked_tone": "dark brown skin",
+   "pixels": 33218
+  },
+  {
+   "id": "face_108",
+   "ita": -18.1,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "deep tan skin",
+   "pixels": 32076
+  },
+  {
+   "id": "face_109",
+   "ita": 24.8,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 36712
+  },
+  {
+   "id": "face_110",
+   "ita": 14.0,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 34524
+  },
+  {
+   "id": "face_111",
+   "ita": 25.3,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 32472
+  },
+  {
+   "id": "face_112",
+   "ita": 42.3,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 35126
+  },
+  {
+   "id": "face_113",
+   "ita": 31.9,
+   "band": "intermediate",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 36325
+  },
+  {
+   "id": "face_114",
+   "ita": 33.4,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 36225
+  },
+  {
+   "id": "face_115",
+   "ita": -21.8,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 31879
+  },
+  {
+   "id": "face_116",
+   "ita": 2.1,
+   "band": "brown",
+   "asked_group": "preta",
+   "asked_tone": "dark brown skin",
+   "pixels": 33451
+  },
+  {
+   "id": "face_117",
+   "ita": 42.8,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 36139
+  },
+  {
+   "id": "face_118",
+   "ita": 31.1,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 36430
+  },
+  {
+   "id": "face_119",
+   "ita": 35.5,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 30741
+  },
+  {
+   "id": "face_120",
+   "ita": 1.9,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 29223
+  },
+  {
+   "id": "face_121",
+   "ita": 43.6,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 34491
+  },
+  {
+   "id": "face_122",
+   "ita": 39.1,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 31860
+  },
+  {
+   "id": "face_123",
+   "ita": 9.3,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 33547
+  },
+  {
+   "id": "face_124",
+   "ita": 18.3,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 35677
+  },
+  {
+   "id": "face_125",
+   "ita": 44.4,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 28711
+  },
+  {
+   "id": "face_126",
+   "ita": -8.1,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 30808
+  },
+  {
+   "id": "face_127",
+   "ita": 24.6,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 24651
+  },
+  {
+   "id": "face_128",
+   "ita": -5.3,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 34833
+  },
+  {
+   "id": "face_129",
+   "ita": -31.1,
+   "band": "dark",
+   "asked_group": "preta",
+   "asked_tone": "dark brown skin",
+   "pixels": 34554
+  },
+  {
+   "id": "face_130",
+   "ita": 2.2,
+   "band": "brown",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 30703
+  },
+  {
+   "id": "face_131",
+   "ita": 32.6,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 35232
+  },
+  {
+   "id": "face_132",
+   "ita": 23.3,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 35597
+  },
+  {
+   "id": "face_133",
+   "ita": 46.8,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 35111
+  },
+  {
+   "id": "face_134",
+   "ita": 41.7,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 34725
+  },
+  {
+   "id": "face_135",
+   "ita": -16.8,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "deep tan skin",
+   "pixels": 32161
+  },
+  {
+   "id": "face_136",
+   "ita": 33.6,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 34110
+  },
+  {
+   "id": "face_137",
+   "ita": -12.2,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 28161
+  },
+  {
+   "id": "face_138",
+   "ita": 37.8,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 35479
+  },
+  {
+   "id": "face_139",
+   "ita": -7.9,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 32488
+  },
+  {
+   "id": "face_140",
+   "ita": -7.5,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "deep tan skin",
+   "pixels": 26731
+  },
+  {
+   "id": "face_141",
+   "ita": 24.3,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 26382
+  },
+  {
+   "id": "face_142",
+   "ita": 8.7,
+   "band": "brown",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 36063
+  },
+  {
+   "id": "face_143",
+   "ita": 24.6,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 26416
+  },
+  {
+   "id": "face_144",
+   "ita": 2.8,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 36806
+  },
+  {
+   "id": "face_145",
+   "ita": 18.1,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 35112
+  },
+  {
+   "id": "face_146",
+   "ita": -40.2,
+   "band": "dark",
+   "asked_group": "preta",
+   "asked_tone": "very dark skin",
+   "pixels": 34449
+  },
+  {
+   "id": "face_147",
+   "ita": 14.6,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "deep tan skin",
+   "pixels": 29235
+  },
+  {
+   "id": "face_148",
+   "ita": 42.2,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 35896
+  },
+  {
+   "id": "face_149",
+   "ita": -2.2,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 33427
+  },
+  {
+   "id": "face_150",
+   "ita": 24.5,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 34170
+  },
+  {
+   "id": "face_151",
+   "ita": 18.4,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "deep tan skin",
+   "pixels": 32017
+  },
+  {
+   "id": "face_152",
+   "ita": -18.0,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 34832
+  },
+  {
+   "id": "face_153",
+   "ita": 8.3,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 33458
+  },
+  {
+   "id": "face_154",
+   "ita": 36.3,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 34685
+  },
+  {
+   "id": "face_155",
+   "ita": 33.8,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 35923
+  },
+  {
+   "id": "face_156",
+   "ita": 33.1,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 33018
+  },
+  {
+   "id": "face_157",
+   "ita": 27.9,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 35292
+  },
+  {
+   "id": "face_158",
+   "ita": 13.7,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "deep tan skin",
+   "pixels": 33589
+  },
+  {
+   "id": "face_159",
+   "ita": -17.2,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 34568
+  },
+  {
+   "id": "face_160",
+   "ita": 25.2,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 32541
+  },
+  {
+   "id": "face_161",
+   "ita": 19.0,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 36482
+  },
+  {
+   "id": "face_162",
+   "ita": 33.6,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 34988
+  },
+  {
+   "id": "face_163",
+   "ita": 3.6,
+   "band": "brown",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 36925
+  },
+  {
+   "id": "face_164",
+   "ita": -10.8,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 31387
+  },
+  {
+   "id": "face_165",
+   "ita": 38.6,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 36479
+  },
+  {
+   "id": "face_166",
+   "ita": 43.1,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 35361
+  },
+  {
+   "id": "face_167",
+   "ita": 22.0,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 23114
+  },
+  {
+   "id": "face_168",
+   "ita": 35.7,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 35311
+  },
+  {
+   "id": "face_169",
+   "ita": 29.5,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 36565
+  },
+  {
+   "id": "face_170",
+   "ita": -3.6,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 30604
+  },
+  {
+   "id": "face_171",
+   "ita": 22.2,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 34631
+  },
+  {
+   "id": "face_172",
+   "ita": 40.2,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 37402
+  },
+  {
+   "id": "face_173",
+   "ita": 39.2,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 36932
+  },
+  {
+   "id": "face_174",
+   "ita": 41.4,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 37185
+  },
+  {
+   "id": "face_175",
+   "ita": 39.8,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 35036
+  },
+  {
+   "id": "face_176",
+   "ita": 15.8,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 32874
+  },
+  {
+   "id": "face_177",
+   "ita": 38.8,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 36718
+  },
+  {
+   "id": "face_178",
+   "ita": -36.5,
+   "band": "dark",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 24801
+  },
+  {
+   "id": "face_179",
+   "ita": 12.7,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 29735
+  },
+  {
+   "id": "face_180",
+   "ita": -5.4,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 26597
+  },
+  {
+   "id": "face_181",
+   "ita": 8.9,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 32554
+  },
+  {
+   "id": "face_182",
+   "ita": 30.5,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 37289
+  },
+  {
+   "id": "face_183",
+   "ita": 28.3,
+   "band": "intermediate",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 34467
+  },
+  {
+   "id": "face_184",
+   "ita": 24.8,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 33289
+  },
+  {
+   "id": "face_185",
+   "ita": -0.7,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 32701
+  },
+  {
+   "id": "face_186",
+   "ita": -34.5,
+   "band": "dark",
+   "asked_group": "preta",
+   "asked_tone": "dark brown skin",
+   "pixels": 34839
+  },
+  {
+   "id": "face_187",
+   "ita": -51.1,
+   "band": "dark",
+   "asked_group": "preta",
+   "asked_tone": "very dark skin",
+   "pixels": 30489
+  },
+  {
+   "id": "face_188",
+   "ita": 22.5,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "light brown skin",
+   "pixels": 31591
+  },
+  {
+   "id": "face_189",
+   "ita": -39.9,
+   "band": "dark",
+   "asked_group": "preta",
+   "asked_tone": "deep brown skin",
+   "pixels": 29573
+  },
+  {
+   "id": "face_190",
+   "ita": -3.9,
+   "band": "brown",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 18730
+  },
+  {
+   "id": "face_191",
+   "ita": -2.7,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 33587
+  },
+  {
+   "id": "face_192",
+   "ita": -16.5,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 26578
+  },
+  {
+   "id": "face_193",
+   "ita": 21.5,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "very fair skin",
+   "pixels": 34825
+  },
+  {
+   "id": "face_194",
+   "ita": 43.9,
+   "band": "light",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 31434
+  },
+  {
+   "id": "face_195",
+   "ita": 13.3,
+   "band": "tan",
+   "asked_group": "parda",
+   "asked_tone": "medium brown skin",
+   "pixels": 35421
+  },
+  {
+   "id": "face_196",
+   "ita": 5.8,
+   "band": "brown",
+   "asked_group": "parda",
+   "asked_tone": "olive brown skin",
+   "pixels": 34265
+  },
+  {
+   "id": "face_197",
+   "ita": -42.4,
+   "band": "dark",
+   "asked_group": "preta",
+   "asked_tone": "very dark skin",
+   "pixels": 31958
+  },
+  {
+   "id": "face_198",
+   "ita": 20.5,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "fair skin",
+   "pixels": 32319
+  },
+  {
+   "id": "face_199",
+   "ita": 27.1,
+   "band": "tan",
+   "asked_group": "branca",
+   "asked_tone": "light olive skin",
+   "pixels": 35100
+  }
+ ]
+}

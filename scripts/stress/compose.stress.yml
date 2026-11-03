@@ -1,0 +1,5 @@
+# Added to trackid's docker-compose.yml for the stress stack (env.sh's stress_compose): Postgres
+# keeps statement costs, which the stress record reads (pg_stat_statements).
+services:
+  postgres:
+    command: ["postgres", "-c", "shared_preload_libraries=pg_stat_statements", "-c", "pg_stat_statements.track=all", "-c", "max_connections=200"]

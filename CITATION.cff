@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "trackid-sim: a synthetic, ground-truthed multimodal population simulator for TrackID"
+type: software
+authors:
+  - given-names: "Rodrigo Fileto Cuerci"
+    family-names: "Maciel"
+license: Apache-2.0
+repository-code: "https://github.com/rodfileto/trackid-sim"
+keywords:
+  - synthetic data
+  - forensic science
+  - biometrics
+  - record linkage
+  - simulation

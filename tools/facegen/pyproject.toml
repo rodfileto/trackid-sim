@@ -1,0 +1,40 @@
+[project]
+name = "facegen"
+version = "0.1.0"
+requires-python = "==3.12.*"
+dependencies = [
+    "accelerate>=1.15.0",
+    "bitsandbytes>=0.50.2",
+    "diffusers>=0.40.0",
+    "gguf>=0.19.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "pillow>=12.3.0",
+    "protobuf>=7.36.2",
+    "safetensors>=0.8.0",
+    "sentencepiece>=0.2.2",
+    "torch>=2.11.0",
+    "torchvision>=0.26.0",
+    "transformers>=5.17.0",
+]
+
+# torch comes from PyTorch's cu128 index, not PyPI, and this is a deliberate
+# downgrade from the cu130 build PyPI serves (torch 2.14).
+#
+# Why: CUDA is backward compatible in the driver, not forward. A cu130 build
+# needs a host driver >= 580; a cu128 build runs on 12.8 *and* 13.x hosts. On
+# RunPod the host driver is a lottery -- the image's CUDA does not determine
+# it -- and a 12.8 host cost a full pod before this was understood: torch
+# reported "no CUDA device" on a perfectly good RTX 4090. Pinning cu128 makes
+# the host driver stop being a variable.
+#
+# The cost is torch 2.14 -> 2.11, because the cu128 index carries no 2.14
+# build. Local (sm_75) and rented (sm_89) both run cu128 fine.
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchvision = { index = "pytorch-cu128" }
