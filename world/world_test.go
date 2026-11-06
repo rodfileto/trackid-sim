@@ -77,17 +77,18 @@ func TestInvariants(t *testing.T) {
 		persons[e.PersonID] = e.HumanID
 	}
 
-	// Double identities: A keeps their own record and also holds one impostor
-	// record under B's person_id with B's recorded data; A's biometric cluster
-	// therefore spans two names, and B's person two humans. All three records
-	// carry both biometrics, and nobody is in two pairs.
+	// Double identities: A holds one document copying B's recorded data exactly, with A's biometrics, on a
+	// person of its own. It is a driver's licence or an RG from another state; some carry B's fiscal number, and
+	// some A have no other record. Every record in a pair carries both biometrics, and nobody is in two pairs.
 	perHuman := map[string][]Enrollment{}
 	for _, e := range w.Enrollments {
 		perHuman[e.HumanID] = append(perHuman[e.HumanID], e)
 	}
 	both := func(e Enrollment) bool { return len(e.Files) == 2 }
 	doubles, offenders := 0, 0
+	licences, otherState, withFiscal, withOwnRecord := 0, 0, 0, 0
 	inPair := map[string]bool{}
+	fakePersons := map[string]bool{}
 	for _, a := range w.Humans {
 		if a.Impersonates == "" {
 			continue
@@ -113,14 +114,56 @@ func TestInvariants(t *testing.T) {
 			}
 		}
 		bPrimary := perHuman[b.ID][0]
-		if len(fake) != 1 || len(own) == 0 || own[0].Kind != KindPrimary {
-			t.Fatalf("%s: want own primary record plus one impostor record, got %+v", a.ID, perHuman[a.ID])
+		if len(fake) != 1 {
+			t.Fatalf("%s: want one fake document, got %+v", a.ID, perHuman[a.ID])
 		}
-		if fake[0].PersonID != bPrimary.PersonID || fake[0].BirthDate != b.BirthDate || own[0].PersonID == bPrimary.PersonID {
-			t.Fatalf("%s: impostor record %s not filed as %s", a.ID, fake[0].RegisterNumber, b.ID)
+		f := fake[0]
+		if f.PersonID == bPrimary.PersonID || fakePersons[f.PersonID] {
+			t.Fatalf("%s: a fake document needs a person of its own: %s", a.ID, f.PersonID)
 		}
-		if !both(fake[0]) || !both(own[0]) || !both(bPrimary) {
+		fakePersons[f.PersonID] = true
+		if persons[f.PersonID] != "" {
+			t.Fatalf("%s: person %s is also a genuine one", a.ID, f.PersonID)
+		}
+		if f.Name != bPrimary.Name || f.BirthDate != bPrimary.BirthDate || f.Parent1Name != bPrimary.Parent1Name || f.Parent2Name != bPrimary.Parent2Name {
+			t.Fatalf("%s: document %s does not copy %s exactly: %+v, %+v", a.ID, f.RegisterNumber, b.ID, f, bPrimary)
+		}
+		switch {
+		case f.DocumentType == "CNH":
+			licences++
+		case f.DocumentType == "RG" && strings.HasPrefix(f.DocumentNumber, "SIM-RG-SP-"):
+			otherState++
+		default:
+			t.Fatalf("%s: unexpected fake document %s %s", a.ID, f.DocumentType, f.DocumentNumber)
+		}
+		switch f.FiscalNumber {
+		case bPrimary.FiscalNumber:
+			withFiscal++
+		case "":
+		default:
+			t.Fatalf("%s: fake document has a fiscal number of its own: %s", a.ID, f.FiscalNumber)
+		}
+		if !both(f) || !both(bPrimary) {
 			t.Fatalf("%s/%s: every record in a pair needs photo and nist", a.ID, b.ID)
+		}
+		if len(own) > 0 {
+			withOwnRecord++
+			if own[0].Kind != KindPrimary || !both(own[0]) || own[0].PersonID == bPrimary.PersonID {
+				t.Fatalf("%s: own record %+v", a.ID, own[0])
+			}
+		}
+	}
+	for label, n := range map[string]int{"licences": licences, "RGs from another state": otherState, "with the fiscal number": withFiscal,
+		"without it": doubles - withFiscal, "fraudsters with a record": withOwnRecord, "fraudsters without one": doubles - withOwnRecord} {
+		if doubles > 0 && n == 0 {
+			t.Errorf("the mix has no %s among %d", label, doubles)
+		}
+	}
+	// No typos: every record holds its human's data exactly, and a genuine record is its own human's.
+	for _, e := range w.Enrollments {
+		h := humans[e.HumanID]
+		if e.Kind != KindImpostor && (e.Name != h.Name || e.BirthDate != h.BirthDate || e.Parent1Name != h.Mother) {
+			t.Fatalf("%s is not exact: %+v, %+v", e.RegisterNumber, e, h)
 		}
 	}
 	if offenders == 0 {

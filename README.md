@@ -155,11 +155,22 @@ and, for the licences, [docs/LICENSES.md](docs/LICENSES.md).
 
 | Layer | Package | Model |
 |---|---|---|
-| Names | `onomastic` | Compound given names; children inherit mother's then father's last surname; siblings share parents; undeclared fathers; particles (*da/dos*). Two source profiles corrupt records differently: civil registry (light) and police ABIS (uppercase, no accents, noisy). |
-| Population | `world` | Enrollment is more likely for offenders. Three enrollment kinds: `primary`, `renewal` (same person, new document), `duplicate` (same human under a **different** person). Heavy-tailed (discrete Pareto) events per offender, habitual co-offending partners, bystander traces, offenders who are never enrolled. |
+| Names | `onomastic` | Compound given names; children inherit mother's then father's last surname; siblings share parents; undeclared fathers; particles (*da/dos*). Records carry the human's data exactly: no typos, abbreviations or wrong birth dates, since this world is not for testing data entry (removed 2026-11-05). |
+| Population | `world` | Enrollment is more likely for offenders. Four enrollment kinds: `primary`, `renewal` (same person, new document), `duplicate` (same human under a **different** person: an RG from another state, normal) and `impostor` (*Double identities*, below). Heavy-tailed (discrete Pareto) events per offender, habitual co-offending partners, bystander traces, offenders who are never enrolled. |
 | Prints | `fpgen`, `media` | Each human has one finger, a master print drawn from (seed, human id) by an SFinGe-style generator (Go port of `tools/fpgen`). Every NIST file is a new rolled impression of it; a fingerprint evidence is a lift card with one latent per trace, each boxed by its tile. SourceAFIS scores match the Python prototype's (rolled genuine median ~680, latent genuine 39.5% at threshold 40, impostors ~0%). |
 | Images | `media` | Enrollment photos are the pool's base faces as they are. A facial evidence is one CCTV frame: each trace's person (their kept variant) stands behind a counter against a plain wall, scaled so the face is the capture level's size, then blurred, noised and JPEG-compressed as `tools/facegen/degrade.py` does, with a DVR timestamp inside the occurrence's time window (so a frame never postdates the request that sent it). Each trace's box is where its face was placed. |
 | Scoring | `eval` | Pairwise precision/recall/F1 vs true identity, impure clusters, fragmented humans, identification outcomes for questioned traces (correct / wrong person / unresolved), and unknown subjects falsely linked to an enrolled person -- over whatever trackid holds: its matcher's decisions, and users' reviews once they make them. |
+
+### Double identities
+
+Decided 2026-11-05. The usual document fraud is not a second record under the same person: it is a document of its own
+copying someone else's data. Human A holds a driver's licence, or an RG from another state, with human B's name, parents
+and birth date exactly, and A's own face and fingerprints. Nothing in trackid merges people, so the document gets a person
+of its own, and what ties it to B is the data it copies. `-doubles` sets how many (5% of humans), and exact shares vary the
+rest, half each by default: `-fraud-licence` (a licence, else an RG from another state), `-fraud-fiscal` (it carries B's CPF,
+else none), `-fraudster-enrolled` (A also has a record under their own name, else nowhere but here). A crime A commits
+resolves, on paper, to B. Where A has their own record, their cluster holds two names; where A does not, the only trace is
+one identity with two sets of biometrics. trackid's identity conflicts look for both (its docs/ask-plan.md).
 
 ## What is NOT modelled (yet)
 
