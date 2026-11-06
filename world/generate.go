@@ -26,12 +26,15 @@ type Config struct {
 	MissingPhotoRate     float64 `json:"missingPhotoRate"`    // enrollment lacks a face photo
 	MissingFingerprints  float64 `json:"missingFingerprints"` // enrollment lacks a ten-print
 	FatherUnknownRate    float64 `json:"fatherUnknownRate"`   // father not declared on the record
-	BirthDateNoiseRate   float64 `json:"birthDateNoiseRate"`  // duplicate enrollment records a wrong birth date
 
-	// Double identity: for this share of Humans, an enrolled human A also
-	// holds a record under another enrolled human B's person and name, with
-	// A's own biometrics (see genEnrollments).
-	DoubleIdentityRate float64 `json:"doubleIdentityRate"`
+	// Double identity: for this share of Humans, a human A holds a document copying an enrolled human
+	// B's name, parents and birth date, with A's own biometrics, on a person of its own (see
+	// genEnrollments). The shares say how: the document is a driver's licence (else an RG from another
+	// state), it carries B's fiscal number, and A also has a record of their own under their own name.
+	DoubleIdentityRate    float64 `json:"doubleIdentityRate"`
+	FraudLicenceRate      float64 `json:"fraudLicenceRate"`
+	FraudWithFiscalRate   float64 `json:"fraudWithFiscalRate"`
+	FraudsterEnrolledRate float64 `json:"fraudsterEnrolledRate"`
 
 	// Offending: heavy-tailed events per offender (discrete Pareto), with
 	// habitual partners so co-offending links otherwise unrelated cases.
@@ -92,8 +95,11 @@ func DefaultConfig() Config {
 		MissingPhotoRate:     0.05,
 		MissingFingerprints:  0.10,
 		FatherUnknownRate:    0.06,
-		BirthDateNoiseRate:   0.15,
 		DoubleIdentityRate:   0.05,
+
+		FraudLicenceRate:      0.5,
+		FraudWithFiscalRate:   0.5,
+		FraudsterEnrolledRate: 0.5,
 
 		OffenderFraction:     0.15,
 		ParetoAlpha:          1.6,
@@ -229,7 +235,9 @@ func genEnrollments(cfg Config, humans []Human, r *rand.Rand) []Enrollment {
 	var out []Enrollment
 	var personSeq, registerSeq, docSeq, fiscalSeq int
 
-	newEnrollment := func(h Human, kind, personID, docType, fiscal string, profile onomastic.Profile) Enrollment {
+	// Records carry the human's data exactly. Registers do have typos in real life, but they are not
+	// what this world is for.
+	newEnrollment := func(h Human, kind, personID, docType, fiscal string) Enrollment {
 		registerSeq++
 		docSeq++
 		e := Enrollment{
@@ -240,14 +248,14 @@ func genEnrollments(cfg Config, humans []Human, r *rand.Rand) []Enrollment {
 			DocumentNumber: fmt.Sprintf("SIM-%s-%07d", docType, docSeq),
 			FiscalNumber:   fiscal,
 			RegisterNumber: fmt.Sprintf("SIM-R-%07d", registerSeq),
-			Name:           profile.Apply(r, h.Name),
-			Parent1Name:    profile.Apply(r, h.Mother),
+			Name:           h.Name,
+			Parent1Name:    h.Mother,
 			Parent1Gender:  onomastic.Female,
 			Parent2Gender:  onomastic.Male,
 			BirthDate:      h.BirthDate,
 		}
 		if h.FatherKnown {
-			e.Parent2Name = profile.Apply(r, h.Father)
+			e.Parent2Name = h.Father
 		} else {
 			e.Parent2Gender = "U"
 		}
@@ -280,11 +288,11 @@ func genEnrollments(cfg Config, humans []Human, r *rand.Rand) []Enrollment {
 		// cannot collide with a real person's taxpayer number.
 		fiscal := fmt.Sprintf("SIM-CPF-%06d", fiscalSeq)
 
-		out = append(out, newEnrollment(h, KindPrimary, personID, "RG", fiscal, onomastic.Registry))
+		out = append(out, newEnrollment(h, KindPrimary, personID, "RG", fiscal))
 		primary[h.ID] = out[len(out)-1]
 		enrolled = append(enrolled, i)
 		if r.Float64() < cfg.RenewalRate {
-			out = append(out, newEnrollment(h, KindRenewal, personID, "CNH", fiscal, onomastic.Registry))
+			out = append(out, newEnrollment(h, KindRenewal, personID, "CNH", fiscal))
 		}
 		if r.Float64() < cfg.DuplicatePersonRate {
 			personSeq++
@@ -293,47 +301,84 @@ func genEnrollments(cfg Config, humans []Human, r *rand.Rand) []Enrollment {
 				fiscalSeq++
 				dupFiscal = fmt.Sprintf("SIM-CPF-%06d", fiscalSeq)
 			}
-			dup := newEnrollment(h, KindDuplicate, fmt.Sprintf("SIM-P-%06d", personSeq), "RG", dupFiscal, onomastic.Police)
-			if r.Float64() < cfg.BirthDateNoiseRate {
-				dup.BirthDate = noisyBirthDate(r, h.BirthDate)
-			}
+			// An RG from another state: a document of its own, so a person of its own, and normal.
+			dup := newEnrollment(h, KindDuplicate, fmt.Sprintf("SIM-P-%06d", personSeq), "RG", dupFiscal)
+			dup.DocumentNumber = otherStateRG(docSeq)
 			out = append(out, dup)
 		}
 	}
 
-	// Double identities: an enrolled human A (an offender when there are
-	// enough) also holds a record under enrolled human B's person_id, with B's
-	// recorded name, parents and birth date but A's own face and fingerprints.
-	// Two checks then have something to find: A's biometric cluster carries two
-	// sets of names (A's and B's), and B's person carries biometrics of two
-	// humans -- so a crime A commits resolves, on paper, to B. B is of A's sex
-	// (the name is gendered) and the closest in age. Each human is in at most
-	// one pair, and all three records hold both biometrics, since the point is
-	// that biometrics contradict the record.
+	// Double identities: a human A (an offender when there are enough) holds a document copying enrolled
+	// human B's recorded name, parents and birth date, with A's own face and fingerprints. It is a driver's
+	// licence or an RG from another state, on a person of its own: nothing merges people, so what ties it to B
+	// is the data it copies. Some carry B's fiscal number, the rest none. Some A also have a record of their
+	// own, whose cluster then spans two names; the others appear nowhere under their own name, so the only
+	// trace is one identity with two sets of biometrics. A crime A commits resolves, on paper, to B. B is of
+	// A's sex (the name is gendered) and the closest in age, each human is in at most one pair, and every record
+	// in a pair holds both biometrics, since the point is that biometrics contradict the record.
+	//
+	// These draws have their own stream, so the shares can change without moving anything else.
+	fr := rand.New(rand.NewPCG(cfg.Seed, 0xf4a0d))
 	n := min(int(math.Round(cfg.DoubleIdentityRate*float64(cfg.Humans))), len(enrolled)/2)
-	r.Shuffle(len(enrolled), func(i, j int) { enrolled[i], enrolled[j] = enrolled[j], enrolled[i] })
-	impostors := slices.Clone(enrolled)
-	sort.SliceStable(impostors, func(i, j int) bool {
-		return humans[impostors[i]].Offender && !humans[impostors[j]].Offender
-	})
+	isEnrolled := make(map[int]bool, len(enrolled))
+	for _, i := range enrolled {
+		isEnrolled[i] = true
+	}
+	offendersFirst := func(list []int) []int {
+		fr.Shuffle(len(list), func(i, j int) { list[i], list[j] = list[j], list[i] })
+		sort.SliceStable(list, func(i, j int) bool { return humans[list[i]].Offender && !humans[list[j]].Offender })
+		return list
+	}
+	var never []int
+	for i := range humans {
+		if !isEnrolled[i] {
+			never = append(never, i)
+		}
+	}
+	withRecord, withoutRecord := offendersFirst(slices.Clone(enrolled)), offendersFirst(never)
 	both := []File{{FileType: "photo", Sequence: 1}, {FileType: "nist", Sequence: 1}}
 	byRegister := make(map[string]int, len(out))
+	holdsLicence := map[string]bool{}
 	for k, e := range out {
 		byRegister[e.RegisterNumber] = k
+		if e.Kind == KindRenewal {
+			holdsLicence[e.PersonID] = true
+		}
 	}
 	setFiles := func(register string) { out[byRegister[register]].Files = slices.Clone(both) }
 	born := make([]int, len(humans))
-	for _, i := range enrolled {
+	for i := range humans {
 		born[i] = birthYear(humans[i].BirthDate)
 	}
 	paired := map[int]bool{}
-	for _, a := range impostors {
-		if n == 0 {
+	next := func(list []int) int {
+		for _, i := range list {
+			if !paired[i] {
+				return i
+			}
+		}
+		return -1
+	}
+	// Exact shares rather than a draw per pair: a world this small could otherwise leave a kind of fraud
+	// nearly untested.
+	share := func(rate float64) []bool {
+		list := make([]bool, n)
+		for i := range min(int(math.Round(rate*float64(n))), n) {
+			list[i] = true
+		}
+		fr.Shuffle(n, func(i, j int) { list[i], list[j] = list[j], list[i] })
+		return list
+	}
+	ownRecord, carriesFiscal, licence := share(cfg.FraudsterEnrolledRate), share(cfg.FraudWithFiscalRate), share(cfg.FraudLicenceRate)
+	for k := range n {
+		a := next(withRecord)
+		if b := next(withoutRecord); a < 0 || (b >= 0 && !ownRecord[k]) {
+			a = b
+		}
+		if a < 0 {
 			break
 		}
-		if paired[a] {
-			continue
-		}
+		paired[a] = true
 		victim, gap := -1, 0
 		for _, b := range enrolled {
 			if b == a || paired[b] || humans[b].Sex != humans[a].Sex {
@@ -347,36 +392,42 @@ func genEnrollments(cfg Config, humans []Human, r *rand.Rand) []Enrollment {
 		if victim < 0 {
 			continue
 		}
-		paired[a], paired[victim] = true, true
+		paired[victim] = true
 		humans[a].Impersonates = humans[victim].ID
 		p := primary[humans[victim].ID]
 		setFiles(p.RegisterNumber)
-		setFiles(primary[humans[a].ID].RegisterNumber)
-		e := newEnrollment(humans[victim], KindImpostor, p.PersonID, "RG", p.FiscalNumber, onomastic.Registry)
+		if own, ok := primary[humans[a].ID]; ok {
+			setFiles(own.RegisterNumber)
+		}
+		fiscal := ""
+		if carriesFiscal[k] {
+			fiscal = p.FiscalNumber
+		}
+		personSeq++
+		docType := "RG"
+		if licence[k] && !holdsLicence[p.PersonID] {
+			docType = "CNH"
+		}
+		e := newEnrollment(humans[victim], KindImpostor, fmt.Sprintf("SIM-P-%06d", personSeq), docType, fiscal)
+		if docType == "RG" {
+			e.DocumentNumber = otherStateRG(docSeq)
+		}
 		e.HumanID = humans[a].ID
 		e.Files = slices.Clone(both)
 		out = append(out, e)
-		n--
 	}
 	return out
+}
+
+// otherStateRG is the number of an RG issued in another state.
+func otherStateRG(seq int) string {
+	return fmt.Sprintf("SIM-RG-SP-%07d", seq)
 }
 
 func birthYear(iso string) int {
 	var y int
 	fmt.Sscanf(iso, "%d", &y)
 	return y
-}
-
-// noisyBirthDate swaps day and month when possible, else shifts the year by one.
-func noisyBirthDate(r *rand.Rand, iso string) string {
-	var y, m, d int
-	if _, err := fmt.Sscanf(iso, "%d-%d-%d", &y, &m, &d); err != nil {
-		return iso
-	}
-	if d <= 12 && d != m {
-		return fmt.Sprintf("%04d-%02d-%02d", y, d, m)
-	}
-	return fmt.Sprintf("%04d-%02d-%02d", y+1-2*r.IntN(2), m, d)
 }
 
 // paretoCount draws a discrete heavy-tailed count in [min, max].

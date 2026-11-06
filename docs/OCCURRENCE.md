@@ -319,8 +319,8 @@ As built (`world/occurrences.go`, `world/civil.go`, `world/geo.go`; rules pinned
 ### Rules (decided)
 
 - **Criminal occurrences** come only from scene-evidence types (below), in proportion to
-  ISP's counts. Offenders, enrollments, duplicates, renewals and double identities stay as
-  today.
+  ISP's counts. Offenders, enrollments, duplicates and renewals stay as today. Double identities
+  changed on 2026-11-05: see README, *Double identities*.
 - **Unknown-person occurrences are added, and kept simple**: an unknown person is a
   non-offender with **one identity** (at most one primary enrollment: no renewal,
   duplicate or double identity), who **never appears in a criminal case** (not a

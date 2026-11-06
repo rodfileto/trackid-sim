@@ -2,7 +2,6 @@ package onomastic
 
 import (
 	"math/rand/v2"
-	"strings"
 	"testing"
 )
 
@@ -53,41 +52,6 @@ func TestChildInheritsParentSurnames(t *testing.T) {
 		if len(unknownFather.Surnames) != 1 || unknownFather.Surnames[0] != f.Mother.lastSurname() {
 			t.Fatalf("undeclared father: child must carry only the mother's surname, got %v", unknownFather.Surnames)
 		}
-	}
-}
-
-func TestProfileKeepsFirstTokenAndStrips(t *testing.T) {
-	r := rng(3)
-	in := "José Carlos Conceição da Silva"
-	for i := 0; i < 500; i++ {
-		out := Police.Apply(r, in)
-		if out != strings.ToUpper(out) {
-			t.Fatalf("Police must uppercase: %q", out)
-		}
-		if out != StripAccents(out) {
-			t.Fatalf("Police must strip accents: %q", out)
-		}
-		// The first token may take a typo (only ever after its first letter) but is
-		// never dropped or abbreviated.
-		if !strings.HasPrefix(out, "J") || strings.HasPrefix(out, "J.") {
-			t.Fatalf("first token dropped or abbreviated: %q", out)
-		}
-	}
-}
-
-func TestProfileCorruptsAtRoughlyTheConfiguredRate(t *testing.T) {
-	r := rng(9)
-	in := "Maria Aparecida Souza Lima"
-	changed := 0
-	const n = 5000
-	for i := 0; i < n; i++ {
-		if Registry.Apply(r, in) != in {
-			changed++
-		}
-	}
-	// 4 tokens at ~2-6% each -> a modest but clearly non-zero share, far from 0 or 100%.
-	if changed < n/50 || changed > n/2 {
-		t.Fatalf("Registry changed %d of %d names; expected a small non-zero share", changed, n)
 	}
 }
 

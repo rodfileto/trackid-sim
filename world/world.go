@@ -17,8 +17,8 @@ import (
 const (
 	KindPrimary   = "primary"   // the human's first enrollment
 	KindRenewal   = "renewal"   // a later document filed under the SAME person
-	KindDuplicate = "duplicate" // the same human enrolled again under a DIFFERENT person
-	KindImpostor  = "impostor"  // a DIFFERENT (enrolled) human filed under this person, with its name and data
+	KindDuplicate = "duplicate" // the same human enrolled again under a DIFFERENT person: an RG from another state, normal
+	KindImpostor  = "impostor"  // a document copying another human's data with this human's biometrics, on a person of its own
 )
 
 type Human struct {
@@ -31,9 +31,9 @@ type Human struct {
 	FatherKnown bool   `json:"fatherKnown"`
 	Offender    bool   `json:"offender"`
 
-	// Impersonates is the human whose identity this one also holds: besides
-	// their own enrollment, a KindImpostor record under that human's person_id
-	// and name, carrying this human's face and fingerprints.
+	// Impersonates is the human whose identity this one also holds: a KindImpostor document copying that
+	// human's data, on a person of its own, carrying this human's face and fingerprints. This human may
+	// have no other record.
 	Impersonates string `json:"impersonates,omitempty"`
 
 	// Face and Variant bind the human to the face pool (AssignFaces): Face is

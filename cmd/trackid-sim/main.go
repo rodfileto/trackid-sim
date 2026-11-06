@@ -98,6 +98,9 @@ func cmdGenerate(args []string) {
 	fs.Float64Var(&cfg.EnrolledFraction, "enrolled", cfg.EnrolledFraction, "share of non-offenders enrolled")
 	fs.Float64Var(&cfg.DuplicatePersonRate, "duplicates", cfg.DuplicatePersonRate, "share of enrolled humans enrolled again under another person")
 	fs.Float64Var(&cfg.DoubleIdentityRate, "doubles", cfg.DoubleIdentityRate, "share of humans who also hold a record under another enrolled human's person and name")
+	fs.Float64Var(&cfg.FraudLicenceRate, "fraud-licence", cfg.FraudLicenceRate, "share of those documents that are driver's licences; the rest are RGs from another state")
+	fs.Float64Var(&cfg.FraudWithFiscalRate, "fraud-fiscal", cfg.FraudWithFiscalRate, "share of those documents carrying the copied person's fiscal number")
+	fs.Float64Var(&cfg.FraudsterEnrolledRate, "fraudster-enrolled", cfg.FraudsterEnrolledRate, "share of those humans who also have a record of their own")
 	poolPath := fs.String("pool", "tools/facegen/pool_index.json", "face pool index to bind faces to humans (empty: no faces)")
 	fs.Parse(args)
 
