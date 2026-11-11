@@ -78,13 +78,15 @@ func main() {
 		cmdStress(os.Args[2:])
 	case "stress-report":
 		cmdStressReport(os.Args[2:])
+	case "measure-geocoding":
+		cmdMeasureGeocoding(os.Args[2:])
 	default:
 		usage()
 	}
 }
 
 func usage() {
-	log.Fatal("usage: trackid-sim <generate|load|eval|users|snapshot|plant|debrief|stress|stress-report|frame|fingerprints|fetch-lexicon|fetch-isp|fetch-banks> [flags]")
+	log.Fatal("usage: trackid-sim <generate|load|eval|users|snapshot|plant|debrief|stress|stress-report|frame|fingerprints|fetch-lexicon|fetch-isp|fetch-banks|measure-geocoding> [flags]")
 }
 
 func cmdGenerate(args []string) {

@@ -130,8 +130,10 @@ func cmdFetchBanks(args []string) {
 		here = here[:*limit]
 	}
 
+	// OpenStreetMap's public instance unless GEOCODER_URL names another: a few hundred
+	// addresses, once, a second apart, and cached so a rerun sends nothing already answered.
 	g, err := geocode.NewNominatim(geocode.NominatimConfig{
-		BaseURL:   os.Getenv("GEOCODER_URL"),
+		BaseURL:   envOr("GEOCODER_URL", geocode.PublicNominatim),
 		UserAgent: envOr("GEOCODER_USER_AGENT", userAgent),
 		Email:     os.Getenv("GEOCODER_EMAIL"),
 	})
