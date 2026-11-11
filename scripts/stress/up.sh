@@ -24,11 +24,11 @@ wait_for() {
 
 echo "Starting containers (project trackid-stress) ..."
 # Built from ../trackid each time (cached when nothing changed), so the sidecar runs the code checked out.
-stress_compose up -d --build postgres redis minio sourceafis-sidecar
+stress_compose up -d --build postgres redis seaweedfs sourceafis-sidecar
 # Over TCP: while the image initialises the database, it listens on its socket only.
 wait_for "Postgres" "stress_compose exec -T postgres pg_isready -h 127.0.0.1 -U trackid -d trackid"
 wait_for "the fingerprint sidecar" "curl -sf ${FINGERPRINT_SIDECAR_URL}/healthz"
-wait_for "MinIO" "curl -sf ${S3_ENDPOINT}/minio/health/live"
+wait_for "SeaweedFS" "curl -sf ${S3_ENDPOINT}/healthz"
 
 echo "Migrating and setting the match thresholds ..."
 cd "$TRACKID_DIR"

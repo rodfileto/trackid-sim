@@ -25,14 +25,13 @@ STRESS_RUN_DIR="$STRESS_SIM_DIR/out/stress/.run"
 
 POSTGRES_PORT=56432
 REDIS_PORT=56380
-MINIO_PORT=59100
-MINIO_CONSOLE_PORT=59101
+S3_PORT=59100
 SIDECAR_PORT=58190
 PORT=8182
 
 DATABASE_URL="postgres://trackid:trackid_dev@localhost:${POSTGRES_PORT}/trackid?sslmode=disable"
 REDIS_URL="redis://localhost:${REDIS_PORT}/0"
-S3_ENDPOINT="http://localhost:${MINIO_PORT}"
+S3_ENDPOINT="http://localhost:${S3_PORT}"
 S3_ACCESS_KEY=trackid
 S3_SECRET_KEY=trackid_dev_storage
 S3_BUCKET=trackid-stress

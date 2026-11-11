@@ -15,7 +15,7 @@ No real data is used anywhere. Every generated identifier is visibly synthetic
 (`SIM-P-…`, `SIM-RG-…`, `SIM-CPF-…`; the last can never validate as a real CPF).
 
 ```
-world.Generate ──► out/world.json ──► load.Ingest ────────► Postgres + MinIO
+world.Generate ──► out/world.json ──► load.Ingest ────────► Postgres + SeaweedFS
  (names, enrol-      (inputs + hidden     media: photos, prints, │
   ments, offending,   ground truth)       CCTV frames, lift      ▼ trackid's queue
   cases, faces)                           cards + boxes     cmd/worker: embed / extract ─► match ─► SYSTEM decisions
